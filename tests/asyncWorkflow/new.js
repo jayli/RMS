@@ -2,7 +2,7 @@
 
 var aw = require('../../lib/asyncWorkflow');
 
-var wf = new aw('hello,world!', {
+var wf = new aw('中文', {
     type: 'string',
     steps: [
         ['nativeascii', {}],
@@ -11,12 +11,3 @@ var wf = new aw('hello,world!', {
 });
 
 wf.start();
-
-var wf2 = new aw('just test!', {
-    type: 'string',
-    steps: [
-        ['syntaxChecker', {}]
-    ]
-});
-
-wf2.start();
