@@ -11,3 +11,12 @@ var wf = new aw('hello,world!', {
 });
 
 wf.start();
+
+var wf2 = new aw('just test!', {
+    type: 'string',
+    steps: [
+        ['syntaxChecker', {}]
+    ]
+});
+
+wf2.start();
