@@ -2,7 +2,7 @@
 
 var dispatcher = require('../lib/workerDispatcher');
 
-var w = new dispatcher('aa', {
+new dispatcher('aa', {
   type: 'string',
   steps: [
     ['nativeascii', {}]
