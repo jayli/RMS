@@ -23,7 +23,7 @@ wf = new aw('中文', {
 wf.on('stepStart', function(e) {
   assert.equal(e.input, '中文');
 });
-wf.on('stepEnd', function(e) {
+wf.on('stepComplete', function(e) {
   assert.equal(e.output, '\\u4E2D\\u6587');
 });
 wf.start();
