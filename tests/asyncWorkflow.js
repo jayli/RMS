@@ -13,17 +13,3 @@ assert.throws(function() {
     ]
   });
 }, aw.JOB_NOT_SUPPORTED);
-
-wf = new aw('中文', {
-  type: 'string',
-  steps: [
-    ['nativeascii', {}]
-  ]
-});
-wf.on('stepStart', function(e) {
-  assert.equal(e.input, '中文');
-});
-wf.on('stepComplete', function(e) {
-  assert.equal(e.output, '\\u4E2D\\u6587');
-});
-wf.start();
