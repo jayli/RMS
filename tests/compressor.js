@@ -6,7 +6,7 @@ var http = require('http');
 var querystring = require('querystring');
 var util = require('util');
 
-function run(content, type) {
+function run(content, type, output) {
   var postData = querystring.stringify({
     content: content,
     config: JSON.stringify({
@@ -32,7 +32,7 @@ function run(content, type) {
     res.on('data', function(chunk) {
       code += chunk.toString();
     }).on('end', function(chunk) {
-      console.log('Done.');
+      console.log(output || 'Done.');
     });
   });
 
@@ -50,4 +50,7 @@ function read(name) {
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
 // encode problem
-run(read('search.source.css'), 'CSS');
+var content = read('search.source.css');
+for (var i = 0, l = 1000; i < l; i++) {
+  run(content, 'CSS', i);
+}
