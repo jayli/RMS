@@ -49,8 +49,9 @@ function read(name) {
 //run(read('kissy.js'), 'JavaScript');
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
+//run(read('search.source.css'), 'CSS', i);
 // encode problem
-var content = read('search.source.css');
-for (var i = 0, l = 1000; i < l; i++) {
-  run(content, 'CSS', i);
+var content = read('kissy.js');
+for (var i = 0, l = 100; i < l; i++) {
+  run(content, 'JavaScript', i);
 }

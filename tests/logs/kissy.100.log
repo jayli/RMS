@@ -1,0 +1,224 @@
+Statistical profiling result from profile-13135766793331903.log, (45312 ticks, 7 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   total  nonlib   name
+   90.3%    0.0%   /lib64/libc-2.5.so
+    3.1%    0.0%   /usr/local/bin/node
+    1.4%    0.0%   /lib64/libpthread-2.5.so
+    0.0%    0.0%   /usr/lib64/libstdc++.so.6.0.8
+    0.0%    0.0%   /lib64/libcrypto.so.0.9.8e
+
+ [JavaScript]:
+   total  nonlib   name
+    1.6%   31.0%   QueryString.unescapeBuffer querystring.js:34 Function
+    0.8%   16.2%   CallFunction Stub
+    0.5%   10.1%   CompareStub_EQ_STRICT Stub
+    0.4%    7.8%   charCode querystring.js:28 Function
+    0.3%    6.2%   SubString Stub
+    0.2%    3.2%   ExternalArrayStub Stub
+    0.1%    1.8%   Parser.write /home/wenhe/projects/RMS/node_modules/webworker/lib/ws/connection.js:333 Function
+    0.1%    1.2%   Buffer buffer.js:128 Function
+    0.1%    1.0%   A load IC from the snapshot LoadIC
+    0.0%    0.8%   charCodeAt CallIC
+    0.0%    0.7%   ExternalArrayStub Stub
+    0.0%    0.6%   charCodeAt CallIC
+    0.0%    0.4%   charCodeAt CallIC
+    0.0%    0.4%   charCodeAt CallIC
+    0.0%    0.4%   charCodeAt CallIC
+    0.0%    0.4%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.3%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   A load IC from the snapshot LoadIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.2%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   push CallIC
+    0.0%    0.1%   A store IC from the snapshot StoreIC
+    0.0%    0.1%   JSEntry Stub
+    0.0%    0.1%   CEntry Stub
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.1%   charCodeAt CallIC
+    0.0%    0.0%   offset LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   toUTCString native date.js:930 LazyCompile
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   getOwnPropertyNames native v8natives.js:707 LazyCompile
+    0.0%    0.0%   validateObject /home/wenhe/projects/RMS/node_modules/webservice/vendor/resourcer/lib/resourcer/validator.js:41 Function
+    0.0%    0.0%   match native string.js:156 LazyCompile
+    0.0%    0.0%   args_count: 2 CallMegamorphic
+    0.0%    0.0%   parser.onIncoming.res http.js:1071 Function
+    0.0%    0.0%   args_count: 4 CallMegamorphic
+    0.0%    0.0%   toLowerCase native string.js:688 LazyCompile
+    0.0%    0.0%   test native regexp.js:218 LazyCompile
+    0.0%    0.0%   slice native string.js:487 LazyCompile
+    0.0%    0.0%   TypeRecordingBinaryOpStub_SHR_Alloc_SMI Stub
+    0.0%    0.0%   Buffer.write buffer.js:235 Function
+    0.0%    0.0%   Buffer.slice buffer.js:372 Function
+    0.0%    0.0%   onWritable net.js:181 Function
+    0.0%    0.0%   ChildProcess.kill.sig child_process.js:196 Function
+    0.0%    0.0%   Socket._writeOut net.js:389 Function
+    0.0%    0.0%   normalizeArray path.js:30 Function
+    0.0%    0.0%   append _linklist.js:63 Function
+    0.0%    0.0%   journey.Router.handle /home/wenhe/projects/RMS/node_modules/webservice/node_modules/journey/lib/journey.js:177 Function
+    0.0%    0.0%   self.watcher.callback net.js:904 Function
+    0.0%    0.0%   onReadable net.js:174 Function
+    0.0%    0.0%   self._writeImpl net.js:152 Function
+    0.0%    0.0%   journey.Router.validateRoute.i /home/wenhe/projects/RMS/node_modules/webservice/node_modules/journey/lib/journey.js:245 Function
+    0.0%    0.0%   StringAdd Stub
+    0.0%    0.0%   CallFunction Stub
+    0.0%    0.0%   Socket.write net.js:294 Function
+    0.0%    0.0%   DoConstructRegExp native regexp.js:35 LazyCompile
+    0.0%    0.0%   CompareIC Stub
+    0.0%    0.0%   FastNewContextStub Stub
+    0.0%    0.0%   A builtin from the snapshot Builtin
+    0.0%    0.0%   A builtin from the snapshot Builtin
+    0.0%    0.0%   A builtin from the snapshot Builtin
+    0.0%    0.0%   WeekDays native date.js:398 LazyCompile
+    0.0%    0.0%   b native string.js:36 LazyCompile
+    0.0%    0.0%   FastCloneShallowArray Stub
+    0.0%    0.0%   StringAdd Stub
+    0.0%    0.0%   ArgumentsAccess Stub
+    0.0%    0.0%   A builtin from the snapshot Builtin
+    0.0%    0.0%   write CallIC
+    0.0%    0.0%   parent LoadIC
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   stringify CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   setTime CallIC
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   append CallIC
+    0.0%    0.0%   length LoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   push CallIC
+    0.0%    0.0%   length LoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   offset LoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   length LoadIC
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   fd StoreIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   type StoreIC
+    0.0%    0.0%   push CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   push CallIC
+    0.0%    0.0%   parent LoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   length LoadIC
+    0.0%    0.0%   push CallIC
+    0.0%    0.0%   charCodeAt CallIC
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%   start CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   indexOf CallIC
+    0.0%    0.0%   parent LoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   push CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   ^"|"$ RegExp
+    0.0%    0.0%   order LoadIC
+    0.0%    0.0%    KeyedLoadIC
+    0.0%    0.0%   _writeImpl CallIC
+    0.0%    0.0%   ^"|"$ RegExp
+
+ [C++]:
+   total  nonlib   name
