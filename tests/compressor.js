@@ -7,7 +7,9 @@ var querystring = require('querystring');
 var util = require('util');
 
 var time = +new Date;
+var counter = 0;
 var repeat = +process.argv[2] || 5;
+var first = true;
 
 function run(content, type) {
   var postData = querystring.stringify({
@@ -36,9 +38,15 @@ function run(content, type) {
     res.on('data', function(chunk) {
       code += chunk.toString();
     }).on('end', function(chunk) {
+      if (first) {
+        console.log('First Response: %s ms', +new Date - eachTime);
+        first = false;
+      }
       console.log('Success: %s, %s ms',
           JSON.parse(code).success, +new Date - eachTime);
-      console.log(+new Date - time + 'ms');
+      if (++counter == repeat) {
+        console.log('All Done, Total Time %s ms', +new Date - time);
+      }
     });
   });
 
@@ -58,6 +66,7 @@ function read(name) {
 //run(read('search.source.css'), 'CSS', i);
 // encode problem
 var content = read('kissy.js');
+time = +new Date;
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'JavaScript');
 }
