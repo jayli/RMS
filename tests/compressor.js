@@ -6,7 +6,10 @@ var http = require('http');
 var querystring = require('querystring');
 var util = require('util');
 
-function run(content, type, output) {
+var time = +new Date;
+var repeat = +process.argv[2] || 5;
+
+function run(content, type) {
   var postData = querystring.stringify({
     content: content,
     config: JSON.stringify({
@@ -26,13 +29,16 @@ function run(content, type, output) {
     }
   };
 
+  var eachTime = +new Date;
   var postReq = http.request(opts, function(res) {
     res.setEncoding('utf8');
     var code = '';
     res.on('data', function(chunk) {
       code += chunk.toString();
     }).on('end', function(chunk) {
-      console.log(output || 'Done.');
+      console.log('Success: %s, %s ms',
+          JSON.parse(code).success, +new Date - eachTime);
+      console.log(+new Date - time + 'ms');
     });
   });
 
@@ -52,6 +58,6 @@ function read(name) {
 //run(read('search.source.css'), 'CSS', i);
 // encode problem
 var content = read('kissy.js');
-for (var i = 0, l = 100; i < l; i++) {
-  run(content, 'JavaScript', i);
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'JavaScript');
 }
