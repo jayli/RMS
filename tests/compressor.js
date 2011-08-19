@@ -74,7 +74,8 @@ for (var i = 0, l = repeat; i < l; i++) {
 }
 */
 
-var content = 'aa';
+// empty steps
+var content = read('kissy.js');
 time = +new Date;
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'JavaScript', []);
