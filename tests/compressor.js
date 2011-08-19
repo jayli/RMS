@@ -11,12 +11,12 @@ var counter = 0;
 var repeat = +process.argv[2] || 5;
 var first = true;
 
-function run(content, type) {
+function run(content, type, steps) {
   var postData = querystring.stringify({
     content: content,
     config: JSON.stringify({
       type: type,
-      steps: [['compressor', {}]]
+      steps: steps || [['compressor', {}]]
     })
   });
 
@@ -64,9 +64,18 @@ function read(name) {
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
 //run(read('search.source.css'), 'CSS', i);
-// encode problem
+
+// loop content
+/*
 var content = read('kissy.js');
 time = +new Date;
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'JavaScript');
+}
+*/
+
+var content = 'aa';
+time = +new Date;
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'JavaScript', []);
 }
