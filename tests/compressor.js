@@ -4,6 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var http = require('http');
 var querystring = require('querystring');
+var native2ascii = require('native2ascii').native2ascii;
 var util = require('util');
 
 var time = +new Date;
@@ -98,7 +99,27 @@ for (var i = 0, l = repeat; i < l; i++) {
 */
 
 // encode problem
-content = read('search.source.css');
+/*
+content = native2ascii(read('search.source.css'));
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'CSS', [['nativeascii', {}]]);
+}
+*/
+
+// combination with css
+content = native2ascii(read('search.source.css'));
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'CSS', [
+      ['nativeascii', {}],
+      ['compressor', {}]
+  ]);
+}
+
+// combination with js
+content = native2ascii(read('kissy.js'));
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'JavaScript', [
+      ['nativeascii', {}],
+      ['compressor', {}]
+  ]);
 }
