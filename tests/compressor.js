@@ -13,7 +13,7 @@ var first = true;
 
 function run(content, type, steps) {
   var postData = querystring.stringify({
-    content: content,
+    content: native2ascii(content),
     config: JSON.stringify({
       type: type,
       steps: steps || [['compressor', {}]]
@@ -91,6 +91,14 @@ for (var i = 0, l = repeat; i < l; i++) {
 */
 
 // nativeascii job
+/*
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'JavaScript', [['nativeascii', {}]]);
+}
+*/
+
+// encode problem
+content = read('search.source.css');
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'CSS', [['nativeascii', {}]]);
 }
