@@ -6,5 +6,5 @@ var nativeascii = require('../lib/jobs/nativeascii');
 var str = '中文';
 var na = new nativeascii({});
 na.run(str, function(content) {
-  assert.equal('\\u4E2D\\u6587', content);
+  assert.equal('\\u4e2d\\u6587', content.toLowerCase());
 });
