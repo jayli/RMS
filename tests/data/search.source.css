@@ -1,11 +1,11 @@
 /**
- * åŸºæœ¬åº“ Modified from tbsp.css
+ * »ù±¾¿â Modified from tbsp.css
  */
 /**
- * FIX IE6é‡å¤èƒŒæ™¯å›¾ä¸‹è½½
+ * FIX IE6ÖØ¸´±³¾°Í¼ÏÂÔØ
  * @link //ued.taobao.com/blog/2010/05/17/ie6-duplicate-load-bug/
  */
-/* ä»¥ä¸‹å·²ç»åœ¨ global é‡Œå®šä¹‰äº† */
+/* ÒÔÏÂÒÑ¾­ÔÚ global Àï¶¨ÒåÁË */
 html {
     zoom: expression(function(ele){ele.style.zoom = "1"; document.execCommand("BackgroundImageCache",false,true);}(this));
 }
@@ -150,7 +150,7 @@ textarea:focus {
 }
 
 
-/*å…¨å±€ä»·æ ¼*/
+/*È«¾Ö¼Û¸ñ*/
 .price em,
 .price strong {
     font:bold 16px Arial;
@@ -163,7 +163,7 @@ button {
     background-color: transparent;
 }
 
-/* ä¸€æœµå°èŠèŠ±... */
+/* Ò»¶äĞ¡¾Õ»¨... */
 .juhua-gif {
 	background: url(http://img02.taobaocdn.com/tps/i2/T1JSdAXd0nXXXXXXXX-32-32.gif) no-repeat 50% 50%;
 }
@@ -173,9 +173,9 @@ button {
 /*}*/
 
 
-/* å›¾ç‰‡å‚ç›´å±…ä¸­ */
+/* Í¼Æ¬´¹Ö±¾ÓÖĞ */
 
-/* TODO: ç»Ÿä¸€æ‰€æœ‰å›¾ç‰‡å¯¹é½æ–¹æ¡ˆ */
+/* TODO: Í³Ò»ËùÓĞÍ¼Æ¬¶ÔÆë·½°¸ */
 /*-----common style-----*/
 .photo a, .pic a {
     display: table-cell;
@@ -189,7 +189,7 @@ button {
 }
 /*-----End common-----*/
 
-/* é»˜è®¤å³80x80 */
+/* Ä¬ÈÏ¼´80x80 */
 .photo {
     width: 80px;
     height: 80px;
@@ -254,7 +254,7 @@ button {
     *font-size: 192px;
 }
 
-/* PHOTO-160X160 å®é™…å æ®172å¹³æ–¹åƒç´  */
+/* PHOTO-160X160 Êµ¼ÊÕ¼¾İ172Æ½·½ÏñËØ */
 .list-view-enlarge-4pic .photo,
 .s160 {
     width: 160px;
@@ -280,92 +280,92 @@ button {
 /*curmbs*/
 .search-nav,
 .search-nav .crumbs li,
-/*åº—é“ºä¿¡æ¯*/
+/*µêÆÌĞÅÏ¢*/
 .seller-ad .inner,
 .seller-item .inner,
 .combine-style .inner,
-/*æ™ºèƒ½å¯¼èˆª*/
+/*ÖÇÄÜµ¼º½*/
 .panel-bg,
 .prop-list dd .entry a,
-/*ç›¸å…³æœç´¢*/
+/*Ïà¹ØËÑË÷*/
 .related-search,
-/*åˆ—è¡¨è¿‡æ»¤tab*/
+/*ÁĞ±í¹ıÂËtab*/
 .filter-tabbar li,
 .filter-tabbar li .r,
 .filter-tabbar li .l,
-/*è‡ªå®šä¹‰æœç´¢*/
+/*×Ô¶¨ÒåËÑË÷*/
 .customSearch, 
 .customSearch .l,
 .customSearch .r,
-/*ç­›é€‰æ¡ä»¶*/
+/*É¸Ñ¡Ìõ¼ş*/
 /*#filterForm fieldset .shadow,*/
-/*å·¥å…·æ¡*/
+/*¹¤¾ßÌõ*/
 .toolbarWrapper,
 .list-view-enlarge .related-item, .list-view-enlarge .related-seller,.list-view-enlarge .related-items,
 .list-view .related-seller,
 .list-view .related-seller .l,
 .list-view .related-seller .r,
-/*ç©ºqueryé¡µ*/
+/*¿ÕqueryÒ³*/
 .rank-order-list .tabs li,
 .lady-order-list .hd,
 .mobile-order-list .hd,
-/*æ’è¡Œæ¦œTAB*/
+/*ÅÅĞĞ°ñTAB*/
 .rank-tab-nav li a,
 .rank-tab-nav li a span,
-/*äº§å“combo*/
+/*²úÆ·combo*/
 .hot-product .hd,
 .hot-product .hd span,
 .hot-product .hd .view-more,
-/*å•ä»·*/
+/*µ¥¼Û*/
 .measure-icon,
 .measure-icon .l,
 .measure-icon .r,
-/*ç­›é€‰åŒºä¸‹æ‹‰é€‰æ‹©èƒŒæ™¯*/
+/*É¸Ñ¡ÇøÏÂÀ­Ñ¡Ôñ±³¾°*/
 .filter .select-item,
 .filter .order .select-item,
-/*å¤§å°å›¾åˆ‡æ¢èƒŒæ™¯*/
+/*´óĞ¡Í¼ÇĞ»»±³¾°*/
 .toolbar .mode a,
-/*åˆå¹¶åŒæ¬¾combo*/
+/*ºÏ²¢Í¬¿îcombo*/
 .combine-style .price-section ul.pctbar i,.combine-style .price-section ul.pctbar b,
-/* åŒåº—è´­è¡¨å• */
+/* Í¬µê¹º±íµ¥ */
 .tdg-form form {
     background-image: url(//img04.taobaocdn.com/tps/i4/T1MBVHXjdeXXXXXXXX.png);
     background-repeat: repeat-x; 
 }
 
 .show-cate,
-/*å®è´æ•°ç›®*/
+/*±¦±´ÊıÄ¿*/
 .result-count,
 div.show-more a span,
-/*å±æ€§å¯¼èˆª*/
+/*ÊôĞÔµ¼º½*/
 .selected-attr dd a .close-icon,
 .hierarchy-cate dt,
 .prop-list dd .more,
 .prop-list .multi-select dd li a,
 .prop-list dd .entry span,
-/*æ’è¡Œæ¦œé“¾æ¥*/
+/*ÅÅĞĞ°ñÁ´½Ó*/
 .rankingLink,
 #filterToggle,
-/*ç›¸å…³æœç´¢*/
+/*Ïà¹ØËÑË÷*/
 .related-search dd,
-/*åº—é“ºä¿¡æ¯ æ— ç»“æœ*/
+/*µêÆÌĞÅÏ¢ ÎŞ½á¹û*/
 .search-noresult p,
-/*è‡ªå®šä¹‰æœç´¢*/
+/*×Ô¶¨ÒåËÑË÷*/
 .customSearch .csearchToggler,
-/*æ—ºæ—ºåœ¨çº¿ï¼Œåˆå¹¶å–å®¶*/
+/*ÍúÍúÔÚÏß£¬ºÏ²¢Âô¼Ò*/
 .filter-tabbar li.status a,
 .filter-tabbar li.combine a,
 .filter-tabbar li.status a span,
 .filter-tabbar li.combine a span,
-/*æ’åº*/
-/*- æ–°æ’åºæ¡ -*/
+/*ÅÅĞò*/
+/*- ĞÂÅÅĞòÌõ -*/
 .sorting .order-options li a,
-/*- è€æ’åºæ¡ -*/
+/*- ÀÏÅÅĞòÌõ -*/
 .order .order-options li a,
 
 .filter .select-item span,
 
-/*ä¿éšœå›¾æ ‡*/
+/*±£ÕÏÍ¼±ê*/
 .legend2 a span,
 
 .lovebaobei, .hkshop, .vouch, .consignment,
@@ -374,24 +374,24 @@ div.show-more a span,
 .list-view-enlarge .globalbuy,
 .list-view-enlarge-4pic .globalbuy,
 .list-view-enlarge .legend2 .icon-trigger,
-/*ä»·æ ¼*/
+/*¼Û¸ñ*/
 .price em, .price strong,
-/*å·¥å…·æ¡æµ®åŠ¨å…³é—­æŒ‰é’®*/
+/*¹¤¾ßÌõ¸¡¶¯¹Ø±Õ°´Å¥*/
 .toolbarWrapper .closeFloat a,
-/*åˆ†é¡µ*/
+/*·ÖÒ³*/
 .page-start,
 .page-next, 
 .page-prev,
 .page-end,
-/*æ— ç»“æœé¡µ*/
+/*ÎŞ½á¹ûÒ³*/
 .recommend-box dd,
-/*ç©ºqueryé¡µ*/
+/*¿ÕqueryÒ³*/
 .topCat dl dd a span,
 #J_CategoryList h5,
 .allcat-result,
-/*äº§å“combo*/
+/*²úÆ·combo*/
 .rank-stat,
-/*å¤§å›¾æç¤º*/
+/*´óÍ¼ÌáÊ¾*/
 .small2big-popup .arrow,
 .ms-noresult .t-word dd a,
 /*multi-search-form*/
@@ -406,25 +406,25 @@ div.show-more a span,
 .combine-item .combine-seller,
 .combine-item  .combine-samestyle,
 
-/* ä»·æ ¼åŒºé—´ */
+/* ¼Û¸ñÇø¼ä */
 .combine-item .price-range,
 .price-range-dp,
 
-/* æ–°åŠŸèƒ½æç¤ºæµ®å±‚çš„å…³é—­æŒ‰é’® */
+/* ĞÂ¹¦ÄÜÌáÊ¾¸¡²ãµÄ¹Ø±Õ°´Å¥ */
 .newfeature-tip a,
 
-/* æ·˜å§ã€æ’è¡Œæ¦œå…¥å£çš„åˆ†éš”çº¿ */
+/* ÌÔ°É¡¢ÅÅĞĞ°ñÈë¿ÚµÄ·Ö¸ôÏß */
 .list-info .pipe,
 .tbaLink-bottom .pipe,
 
-/* åŒåº—è´­ */
+/* Í¬µê¹º */
 .tdg-form em, 
 .list-info .tdg-show ,
 
-/* æ·˜å§å…¥å£ */
+/* ÌÔ°ÉÈë¿Ú */
 .tbaLink-go, .tbaLink-qiu, .tbaLink-zhe,
 
-/* æ’è¡Œæ¦œå…¥å£ */
+/* ÅÅĞĞ°ñÈë¿Ú */
 .rankingLink,
 .rankingLink .up,
 .rankingLink .down,
@@ -435,23 +435,23 @@ div.show-more a span,
 }
 
 /*.search-form form button,*/
-/*å±æ€§å¯¼èˆª*/
+/*ÊôĞÔµ¼º½*/
 /*div.show-more a,
 .mixed-type .arrow,*/
 .show-more a,
 .mixed-type .selected-attr s.arrow,
 .prop-list .multi-select .submit,
-/*å–å®¶ä¿¡æ¯*/
+/*Âô¼ÒĞÅÏ¢*/
 .seller-ad .extend-info button,
 .seller-item .extend-info button,
-/*ç­›é€‰æ¡ä»¶éƒ¨åˆ†*/
+/*É¸Ñ¡Ìõ¼ş²¿·Ö*/
 /*#filterForm ul.basic,*/
 /*#filterForm div.advanced,*/
-/*æ’åº*/
+/*ÅÅĞò*/
 .toolbar .order a,
-/*ä¿éšœ*/
+/*±£ÕÏ*/
 .toolbar .protection .title,
-/*å•†åŸå›¾æ ‡*/
+/*ÉÌ³ÇÍ¼±ê*/
 .mall-icon,
 .shoe-mall-icon,
 .nameless-good-icon,
@@ -463,31 +463,31 @@ div.show-more a span,
 .digital-icon,
 .seller-ad .mall,
 .discount, .tao1site, .daigou,
-/*æ›´å¤šå®è´*/
+/*¸ü¶à±¦±´*/
 .list-view .related-item,
-/*åˆå¹¶åŒæ¬¾*/
+/*ºÏ²¢Í¬¿î*/
 .related-seller .go,
 .list-combine .button a,
 .combine-item a,
-/*åˆå¹¶åŒæ¬¾ï¼Œåˆå¹¶å–å®¶*/
+/*ºÏ²¢Í¬¿î£¬ºÏ²¢Âô¼Ò*/
 .list-view-enlarge .related-item a.view,
 .list-view-enlarge a.compare,
 .list-view-enlarge .related-items a.samestyle,
-/*ä¿éšœå›¾æ ‡*/
+/*±£ÕÏÍ¼±ê*/
 .list-view .attribute li.legend2 a:hover,
-/*åˆ†é¡µ*/
+/*·ÖÒ³*/
 .page-skip button, 
-/*ç”¨æˆ·åé¦ˆ*/
+/*ÓÃ»§·´À¡*/
 .advise .close a,
-/*ç©ºqueryé¡µ*/
+/*¿ÕqueryÒ³*/
 .rank-order-list .hd,
 .list-panel li i,
 .lady-order-list .hd li.selected,
 a.top50,
 .go-top,
-/*æ’è¡Œæ¦œ*/
+/*ÅÅĞĞ°ñ*/
 .rank-list ol li i,
-/*äº§å“combo*/
+/*²úÆ·combo*/
 .hot-product .cat-name a,
 .star,.star span,
 .combo-product-detail .primay-info .compare,
@@ -501,10 +501,10 @@ a.top50,
 
 .filter button.submit,
 
-/*åŒåº—è´­*/
+/*Í¬µê¹º*/
 .tdg-btn, .tdg-form h5, .tdg-form button,
 
-/*åº—é“ºä¿¡æ¯åç‰‡*/
+/*µêÆÌĞÅÏ¢ÃûÆ¬*/
 ul.attribute .shopinfo,
 
 #filterToggle {
@@ -574,7 +574,7 @@ ul.attribute .shopinfo,
 /*-----global-nav-----*/
 #header {
     *z-index: 99999;
-} /* åŠ z-indexæ˜¯é¿å…å¤´éƒ¨çš„æ‚¬æµ®èœå•è¢«ä¸‹é¢çš„å±‚è¦†ç›– */
+} /* ¼Óz-indexÊÇ±ÜÃâÍ·²¿µÄĞü¸¡²Ëµ¥±»ÏÂÃæµÄ²ã¸²¸Ç */
 #footer {
     border-top: 1px solid #D1D7DC;
     clear: both;
@@ -640,7 +640,7 @@ ul.attribute .shopinfo,
     height: auto;
 }
 
-/*ä»¥ä¸‹ä¸ºå†…å®¹é¡µ*/
+/*ÒÔÏÂÎªÄÚÈİÒ³*/
 #content {
     margin-top: 15px;
 }
@@ -656,8 +656,8 @@ ul.attribute .shopinfo,
     background: none;
 }
 
-/* åŸºæœ¬ä¸Šæ¯ä¸ªé¡µé¢éƒ½ä¼šå‡ºçš„å†…å®¹: */
-/*-----ç›¸å…³æœç´¢-----*/
+/* »ù±¾ÉÏÃ¿¸öÒ³Ãæ¶¼»á³öµÄÄÚÈİ: */
+/*-----Ïà¹ØËÑË÷-----*/
 .related-search-outter {
     margin-top: 10px;
 }
@@ -673,7 +673,7 @@ ul.attribute .shopinfo,
 .related-search dt {
     float: left;
     color: #333333;
-    font-family: 'å®‹ä½“';
+    font-family: 'ËÎÌå';
     margin: 0 -2px 0 0;
     font-size: 13px;
 }
@@ -687,10 +687,10 @@ ul.attribute .shopinfo,
 .related-search dd a {
     white-space: nowrap;
 }
-/*-----End ç›¸å…³æœç´¢-----*/
+/*-----End Ïà¹ØËÑË÷-----*/
 
 
-/*-----è€ é¢åŒ…å±‘-----*/
+/*-----ÀÏ Ãæ°üĞ¼-----*/
 .search-nav {
     border: 1px solid #E5E5E5;
     padding: 0 6px;
@@ -709,7 +709,7 @@ ul.attribute .shopinfo,
     background-position: right -25px;
     background-repeat: no-repeat;
 }
-/*-----End é¢åŒ…å±‘-----*/
+/*-----End Ãæ°üĞ¼-----*/
 
 
 /*shortcut iframe*/
@@ -722,7 +722,7 @@ ul.attribute .shopinfo,
     overflow: hidden;
 }
 
-/* åº—é“ºåç§°é“¾æ¥ {{{ */
+/* µêÆÌÃû³ÆÁ´½Ó {{{ */
 a.shopname {
     color: #555;
     text-decoration: underline;
@@ -734,7 +734,7 @@ a.shopname:hover {
 }
 /* }}} */
 
-/*-----å–å®¶/åº—é“ºä¿¡æ¯-----*/
+/*-----Âô¼Ò/µêÆÌĞÅÏ¢-----*/
 .seller-ad {
     border: 1px solid #ccc;
     margin-top: 10px;
@@ -837,14 +837,14 @@ a.shopname:hover {
 }
 .seller-ad .extend-info .sell-items em {
     color: #f50;
-    font-family: 'å®‹ä½“';
+    font-family: 'ËÎÌå';
     font-weight: bold;
 }
 .seller-ad .extend-info .sell-items a {
     margin-left: 5px;
 }
 
-/*æ— ç»“æœ*/
+/*ÎŞ½á¹û*/
 .search-noresult {
     border: 1px solid #FFCC7F;
     background: #FFFFE5;
@@ -857,15 +857,15 @@ a.shopname:hover {
     font-weight: bold;
     font-size: 14px;
     line-height: 1em;
-    font-family: 'å®‹ä½“';
+    font-family: 'ËÎÌå';
 }
 .search-noresult p em {
     color: #f50;
     font-weight: bold;
 }
-/*-----End å–å®¶/åº—é“ºä¿¡æ¯-----*/
+/*-----End Âô¼Ò/µêÆÌĞÅÏ¢-----*/
 
-/*-----å®è´æ•°é‡ä¿¡æ¯-----*/
+/*-----±¦±´ÊıÁ¿ĞÅÏ¢-----*/
 .list-info {
     margin: 7px 0 -3px;
     padding: 0 10px 0 5px;
@@ -876,7 +876,7 @@ a.shopname:hover {
     color: #444;
     padding-left: 18px;
     background-position: -5px -98px;
-    font-family: 'å®‹ä½“';
+    font-family: 'ËÎÌå';
 }
 .result-count strong {
     font-weight: bold;
@@ -888,7 +888,7 @@ a.shopname:hover {
 }
 
 /**
- * åˆ—è¡¨åº•éƒ¨ä¿¡æ¯
+ * ÁĞ±íµ×²¿ĞÅÏ¢
  */
 .wangan {
     color: #FF8040;
@@ -901,9 +901,9 @@ a.shopname:hover {
     clear: both;
     padding-top: 10px;
 }
-/*-----End å®è´æ•°é‡ä¿¡æ¯-----*/
+/*-----End ±¦±´ÊıÁ¿ĞÅÏ¢-----*/
 
-/* å®¹å™¨åªæœ‰é¡¶éƒ¨è¾¹æ¡†çº¿ï¼Œå­å…ƒç´ æœ‰å·¦å³åŠä¸‹éƒ¨è¾¹çº¿ */
+/* ÈİÆ÷Ö»ÓĞ¶¥²¿±ß¿òÏß£¬×ÓÔªËØÓĞ×óÓÒ¼°ÏÂ²¿±ßÏß */
 .navigation {
     position: relative;
     z-index: 30;
@@ -912,7 +912,7 @@ a.shopname:hover {
     border-top: 1px solid #ffc44c;
     _zoom: 1;
 }
-/* æ¸å˜èƒŒæ™¯ */
+/* ½¥±ä±³¾° */
 .panel-bg {
     overflow: hidden;
     position: absolute;
@@ -922,7 +922,7 @@ a.shopname:hover {
     height: 10px;
     background-position: 0 -386px;
 }
-/* é€‰æ‹©å±æ€§ */
+/* Ñ¡ÔñÊôĞÔ */
 .selected-attr {
     position: relative;
     width: 758px;
@@ -991,7 +991,7 @@ a.shopname:hover {
     background-position: -6px -223px;
 }
 
-/* ç±»ç›® */
+/* ÀàÄ¿ */
 .cate-panel {
     width: 758px;
     border: 1px solid #ffc44c;
@@ -1002,7 +1002,7 @@ a.shopname:hover {
     overflow: hidden;
     padding: 8px 9px;
 }
-/* è®¾ç½®overflow: hiddenï¼Œæ˜¯ä¸ºäº†æ–¹ä¾¿åˆå§‹åŒ–æ—¶ç»™æ‰€æœ‰ç±»ç›®ä¸€ä¸ªé«˜åº¦ï¼Œæ¥é˜²æ­¢å› ä¸ºJSæ‰§è¡Œè¾ƒæ™šå¯¼è‡´æ‰€æœ‰ç±»ç›®å¤„è·³è·ƒçš„é—®é¢˜ */
+/* ÉèÖÃoverflow: hidden£¬ÊÇÎªÁË·½±ã³õÊ¼»¯Ê±¸øËùÓĞÀàÄ¿Ò»¸ö¸ß¶È£¬À´·ÀÖ¹ÒòÎªJSÖ´ĞĞ½ÏÍíµ¼ÖÂËùÓĞÀàÄ¿´¦ÌøÔ¾µÄÎÊÌâ */
 .cate-panel dt, .cate-panel dd {
     float: left;
     display: inline;
@@ -1020,13 +1020,13 @@ a.shopname:hover {
     font-size: 12px;
     padding-right: 2px;
 }
-/* æ¨èç±»ç›® */
+/* ÍÆ¼öÀàÄ¿ */
 .recommend-cate {
 }
-/* å…¨éƒ¨ç±»ç›® */
+/* È«²¿ÀàÄ¿ */
 .all-cate {
 }
-/* çˆ¶å­ç±»ç›® */
+/* ¸¸×ÓÀàÄ¿ */
 .hierarchy-cate {
     padding-top: 5px;
 }
@@ -1048,14 +1048,14 @@ a.shopname:hover {
     height: 1.3em\9;
     background-position: -7px -138px;
     text-overflow: ellipsis;
-    _font-family: 'å®‹ä½“';
+    _font-family: 'ËÎÌå';
 }
 .hierarchy-cate dd {
     padding: 7px 0 6px;
     height: 13px;
     overflow: hidden;
 }
-/* å±æ€§å¯¼èˆª */
+/* ÊôĞÔµ¼º½ */
 .prop-list {
     overflow: hidden;
     position: relative;
@@ -1078,7 +1078,7 @@ a.shopname:hover {
     padding-top: 1px\9;
     *position: relative;
     *bottom: -1px;
-}/* é»˜è®¤å®½åº¦ä¸º55px; margin-bottom: -1px; éšè—æœ€åä¸€æ¡å±æ€§çš„åº•éƒ¨è¾¹æ¡†, IEä½¿ç”¨relativeå®ç° */
+}/* Ä¬ÈÏ¿í¶ÈÎª55px; margin-bottom: -1px; Òş²Ø×îºóÒ»ÌõÊôĞÔµÄµ×²¿±ß¿ò, IEÊ¹ÓÃrelativeÊµÏÖ */
 .prop-list dt,
 .prop-list dd,
 .prop-list dd ul,
@@ -1110,7 +1110,7 @@ a.shopname:hover {
 .prop-list dd li.moreValue {
     float: none;
     *clear: left;
-}/* æ›´å¤šå±æ€§å€¼å¦èµ·ä¸€è¡Œæ˜¾ç¤º For IE6/7 */
+}/* ¸ü¶àÊôĞÔÖµÁíÆğÒ»ĞĞÏÔÊ¾ For IE6/7 */
 .prop-list dd li.moreValue ul {
     padding: 0;
     margin: 0;
@@ -1118,9 +1118,9 @@ a.shopname:hover {
 }
 .prop-list dd li.moreValue li:first-child {
     clear: left;
-} /* [IE8åŠå…¶å®ƒæµè§ˆå™¨]æ›´å¤šå±æ€§å€¼å¦èµ·ä¸€è¡Œæ˜¾ç¤ºï¼Œé¿å…æ›´å¤šå±æ€§å€¼è¿‡å°‘æ—¶ï¼Œä¸å®¹æ˜“çœ‹åˆ°å˜åŒ– */
+} /* [IE8¼°ÆäËüä¯ÀÀÆ÷]¸ü¶àÊôĞÔÖµÁíÆğÒ»ĞĞÏÔÊ¾£¬±ÜÃâ¸ü¶àÊôĞÔÖµ¹ıÉÙÊ±£¬²»ÈİÒ×¿´µ½±ä»¯ */
 
-/* å±æ€§å¤šé€‰å…¥å£ */
+/* ÊôĞÔ¶àÑ¡Èë¿Ú */
 .prop-list dd .entry a {
     display: inline-block;
     height: 16px;
@@ -1175,10 +1175,10 @@ a.shopname:hover {
 margin-top: -1px;
 _border-top: 1px solid #e5e5e5;
 background-color: #fff;
-}*/ /* è¦†ç›–æ¨èå±æ€§çš„åº•éƒ¨è¾¹æ¡†ï¼Œ//æ­¤å¤–ç»™é¡¶éƒ¨åŠ 1pxè¾¹æ¡†ï¼Œå› ä¸ºæ¨èå±æ€§æœ€åçš„è¾¹æ¡†è¢«éšè—äº† only For IE6 */
+}*/ /* ¸²¸ÇÍÆ¼öÊôĞÔµÄµ×²¿±ß¿ò£¬//´ËÍâ¸ø¶¥²¿¼Ó1px±ß¿ò£¬ÒòÎªÍÆ¼öÊôĞÔ×îºóµÄ±ß¿ò±»Òş²ØÁË only For IE6 */
 /*.more-prop .prop-item:first-child dl {
 border-top: 1px solid #e5e5e5;
-}*/ /* éIE6ä¹‹å¤–çš„æµè§ˆå™¨ */
+}*/ /* ·ÇIE6Ö®ÍâµÄä¯ÀÀÆ÷ */
 
 .nav-indicator {
     position: relative;
@@ -1248,7 +1248,7 @@ border-top: 1px solid #e5e5e5;
 }
 .personalize .h30 dd li img {
     margin-top: -5px;
-}/*å› ä¸ºå›¾ç‰‡å®é™…é«˜åº¦æ˜¯40pxï¼Œæ‰€ä»¥æ­¤å¤„å±•ç¤ºç”¨è´Ÿmarginä½¿å…¶å‚ç›´å±…ä¸­*/
+}/*ÒòÎªÍ¼Æ¬Êµ¼Ê¸ß¶ÈÊÇ40px£¬ËùÒÔ´Ë´¦Õ¹Ê¾ÓÃ¸ºmarginÊ¹Æä´¹Ö±¾ÓÖĞ*/
 .personalize .prop-list dd .entry a {
     margin-left: 34px;
     width: auto;
@@ -1291,7 +1291,7 @@ border-top: 1px solid #e5e5e5;
     height: 32px;
     overflow: hidden;
 }
-/* å±æ€§å¤šé€‰å…¥å£ */
+/* ÊôĞÔ¶àÑ¡Èë¿Ú */
 .personalize .prop-list dd li {
     width: 140px;
     padding: 8px 0 8px 8px;
@@ -1350,7 +1350,7 @@ border-top: 1px solid #e5e5e5;
     _background-position: 0px -1495px;
 }
 
-/* å¤šé€‰æ¨¡å¼ */
+/* ¶àÑ¡Ä£Ê½ */
 .prop-list .multi-select {
     position: relative;
     padding: 0;
@@ -1359,12 +1359,12 @@ border-top: 1px solid #e5e5e5;
     background-color: #FFF7E5;
     border-top: 1px solid #FFc44C;
     border-bottom: 1px solid #FFC44C;
-    _zoom: 1; /*è§£å†³Ie6ä¸‹å®¹å™¨å­å…ƒç´ absoluteå®šä½æ— æ³•æ˜¾ç¤º*/
+    _zoom: 1; /*½â¾öIe6ÏÂÈİÆ÷×ÓÔªËØabsolute¶¨Î»ÎŞ·¨ÏÔÊ¾*/
 }
 .prop-list .multi-select dl {
     padding-right: 9px;
     padding-left: 69px;
-    padding-bottom: 24px;/* ä¸ºç¡®å®šæŒ‰é’®é¢„ç•™ä½ç½® */
+    padding-bottom: 24px;/* ÎªÈ·¶¨°´Å¥Ô¤ÁôÎ»ÖÃ */
     margin: 0;
     border: none;
     text-align: left;
@@ -1471,7 +1471,7 @@ border-top: 1px solid #e5e5e5;
 /*}*/
 
 
-/*æ™ºèƒ½å¯¼èˆªåŒ…å«å®è´æ•°é‡*/
+/*ÖÇÄÜµ¼º½°üº¬±¦±´ÊıÁ¿*/
 .prop-list-withAmount dd li {
     padding: 8px 17px;
 }
@@ -1562,7 +1562,7 @@ border-top: 1px solid #e5e5e5;
     margin-bottom: 0;
 }
 
-/* é’»çŸ³å±æ€§ç­›é€‰å™¨ */
+/* ×êÊ¯ÊôĞÔÉ¸Ñ¡Æ÷ */
 #diamond-filter .prop-list .multi-select {
     margin: 0;
     background-color: #FFF;
@@ -1656,7 +1656,7 @@ border-top: 1px solid #e5e5e5;
     color: #404040;
 }
 
-/* æ¨¡å—é»˜è®¤æ˜¾ç¤º/éšè—å®šä¹‰ */
+/* Ä£¿éÄ¬ÈÏÏÔÊ¾/Òş²Ø¶¨Òå */
 .all-cate,
 .mixed-type .recommend-cate,
 .more-prop,
@@ -1667,7 +1667,7 @@ border-top: 1px solid #e5e5e5;
     display: block;
 }
 
-/*"å±•å¼€æ›´å¤š"æŒ‰é’®*/
+/*"Õ¹¿ª¸ü¶à"°´Å¥*/
 .show-more {
     position: relative;
     width: 758px;
@@ -1717,7 +1717,7 @@ body .show-more a:hover {
     background-position: -7px -205px;
 }
 
-/* æ··æ’æ¨¡å¼ */
+/* »ìÅÅÄ£Ê½ */
 .mixed-type .selected-attr h4 {
     padding: 7px 6px 6px 9px;
     font-weight: normal;
@@ -1752,15 +1752,15 @@ body .show-more a:hover {
 }
 /*chrome 11px hacks*/
 .cate-panel dd {
-    font-family: 'å®‹ä½“';
+    font-family: 'ËÎÌå';
 }
 .cate-panel dd {
     font-family: inhert;
 }
-/*-----End ç±»ç›®åŠå±æ€§å¯¼èˆª-----*/
+/*-----End ÀàÄ¿¼°ÊôĞÔµ¼º½-----*/
 
 
-/* å®šåˆ¶åŒ–æœç´¢ */
+/* ¶¨ÖÆ»¯ËÑË÷ */
 .customSearch {
     display: inline;
     position: relative;
@@ -1806,12 +1806,12 @@ body .show-more a:hover {
 /*.customSearch li a {*/
     /*margin-top: 2px\0;*/
     /*display: block\0;*/
-/*}[>IE8 å®šä½fix<]*/
+/*}[>IE8 ¶¨Î»fix<]*/
 .customSearch .enabled .csearchToggler {
     color: #009A00;
     background-position: 6px -1512px;
 }
-/* End å®šåˆ¶åŒ–æœç´¢ */
+/* End ¶¨ÖÆ»¯ËÑË÷ */
 
 /*list-content*/
 .list-content {
@@ -1819,7 +1819,7 @@ body .show-more a:hover {
     width: 760px;
     overflow: hidden;
 }
-/*åˆ—è¡¨*/
+/*ÁĞ±í*/
 .list-view {
     clear: both;
     /*overflow: hidden; */
@@ -1924,7 +1924,7 @@ body .show-more a:hover {
     display: block;
     margin: 5px auto;
 }
-/*b2cå•†å®¶*/
+/*b2cÉÌ¼Ò*/
 /*.list-view div.b2c-icon,*/
 .list-view div.icon-area {
     position: absolute;
@@ -1946,7 +1946,7 @@ body .show-more a:hover {
     float:left;
     *position:relative;
     *zoom:1;
-} /*relative:è§£å†³IE6ã€7ä¸‹é“¾æ¥å¤±æ•ˆé—®é¢˜*/
+} /*relative:½â¾öIE6¡¢7ÏÂÁ´½ÓÊ§Ğ§ÎÊÌâ*/
 .list-view .seller .hkshop {
     float:left;
     margin:5px 5px 0 0;
@@ -1962,7 +1962,7 @@ body .show-more a:hover {
     margin:5px 0 -5px;
 }
 
-/* æœç´¢ç»“æœé¡µå¾®è°ƒ */
+/* ËÑË÷½á¹ûÒ³Î¢µ÷ */
 .list-view .attribute li.price {
     margin-top:-1px;
     *margin-top:0;
@@ -2004,9 +2004,9 @@ body .show-more a:hover {
     *top:58px;
     top:57px\9;
 }
-/* End æœç´¢ç»“æœé¡µå¾®è°ƒ */
+/* End ËÑË÷½á¹ûÒ³Î¢µ÷ */
 
-/*å¤§å›¾*/
+/*´óÍ¼*/
 .list-view-enlarge li.list-item {
     position:relative;
     float:left;
@@ -2074,7 +2074,7 @@ body .show-more a:hover {
     right:0;
 }
 
-/* å¤šå•†å“æœç´¢ {{{ */
+/* ¶àÉÌÆ·ËÑË÷ {{{ */
 .multi-product li {
     height: 14px;
     line-height:14px;
@@ -2133,7 +2133,7 @@ body .show-more a:hover {
 }
 /* }}} */
 
-/*  å–å®¶ä¿¡æ¯combo {{{ */
+/*  Âô¼ÒĞÅÏ¢combo {{{ */
 .seller-item {
     border: 1px solid #CDCDCD;
     margin:10px 0;
@@ -2249,7 +2249,7 @@ body .show-more a:hover {
     font-size:0;
 }
 /* }}} */
-/* åˆå¹¶åŒæ¬¾combo {{{ */
+/* ºÏ²¢Í¬¿îcombo {{{ */
 .combine-style {
     border: 1px solid #CDCDCD;
     margin:10px 0;
@@ -2374,7 +2374,7 @@ body .show-more a:hover {
     width:760px;
 }
 
-/*hotå›¾æ ‡*/
+/*hotÍ¼±ê*/
 sup.pop-hot {
     left:31px;
     position:absolute;
@@ -2382,7 +2382,7 @@ sup.pop-hot {
     z-index:19;
 }
 
-/* listé¡µé¢ï¼Œç§»å‡ºå» {{{ */
+/* listÒ³Ãæ£¬ÒÆ³öÈ¥ {{{ */
 .topCat {
     border:1px solid #FFC858;
     overflow:hidden;
@@ -2427,7 +2427,7 @@ sup.pop-hot {
     padding:0 5px;
     margin-left:-1px;
 }
-/*æ‰€æœ‰ç±»ç›®*/
+/*ËùÓĞÀàÄ¿*/
 #J_CategoryList {
     border-top:1px solid #ccc;
     border-right:1px solid #ccc;
@@ -2482,7 +2482,7 @@ sup.pop-hot {
 #J_CategoryList div.box div a:hover {color: #f50;
 }
 
-/* æ’è¡Œï¼Œåªåœ¨Listé‡Œç”¨ {{{ */
+/* ÅÅĞĞ£¬Ö»ÔÚListÀïÓÃ {{{ */
 .rank-order-list {
     border:1px solid #FFC54F;
     padding:1px;
@@ -2576,7 +2576,7 @@ a.top50 {
     margin-top:6px;
 }
 /* }}} */
-/* å›¾ç‰‡å±•ç¤ºåˆ—è¡¨ï¼Œåœ¨listé¡µé¢ {{{ */
+/* Í¼Æ¬Õ¹Ê¾ÁĞ±í£¬ÔÚlistÒ³Ãæ {{{ */
 .list-type2 {
     padding:1px;
     background:#fff;
@@ -2628,7 +2628,7 @@ a.top50 {
 .list-type2 .price em {
     color:#FF2900;
     font-weight:bold;
-    font-family:'å®‹ä½“';
+    font-family:'ËÎÌå';
     margin-right:3px;
 }
 .list-type2 .sale {
@@ -2638,7 +2638,7 @@ a.top50 {
     height:30px;
     padding:0 6px;
 }
-/*å¥³è£…å¥³é‹*/
+/*Å®×°Å®Ğ¬*/
 .lady-order-list {border:1px solid #F789A5;
 }
 .lady-order-list .hd {
@@ -2661,7 +2661,7 @@ a.top50 {
 .lady-order-list .hd li.selected a {
     color:#414141;
 }
-/*æ‰‹æœº*/
+/*ÊÖ»ú*/
 .mobile-order-list {
     border:1px solid #59B1EF;
 }
@@ -2684,7 +2684,7 @@ a.top50 {
 /* }}} */
 /* }}} */
 
-/* å›åˆ°é¡¶éƒ¨ï¼Œç”¨æ’è¡Œæ¦œé‚£ä¸ªç‰ˆæœ¬ï¼Œè¿™ä¸ªæŒªå‡ºå» {{{ */
+/* »Øµ½¶¥²¿£¬ÓÃÅÅĞĞ°ñÄÇ¸ö°æ±¾£¬Õâ¸öÅ²³öÈ¥ {{{ */
 .go-top {
     background-position:-238px -110px;
     bottom:54%;
@@ -2815,7 +2815,7 @@ a.top50 {
     width:102px;
 }
 
-/* popup æŠ˜æ‰£æµ®å±‚ç­‰æ ·å¼ {{{ */
+/* popup ÕÛ¿Û¸¡²ãµÈÑùÊ½ {{{ */
 .favorable-popup {
     border: 1px solid #c6deff;
     background: #f2f7ff;
@@ -2975,7 +2975,7 @@ a.top50 {
 }
 
 .bang-index i {
-    font: bold 10px/1.5 Tahoma, Arial, 'å®‹ä½“';
+    font: bold 10px/1.5 Tahoma, Arial, 'ËÎÌå';
     display: inline-block;
     position: relative;
     width: 20px;
@@ -3143,42 +3143,42 @@ a.top50 {
     position: relative;
 }
 
-/*æ•°ç */
+/*ÊıÂë*/
 .bang-srp .list dl.SM dt i {
     background-position: 0 -112px;
 }
 
-/*åŒ–å¦†å“*/
+/*»¯×±Æ·*/
 .bang-srp .list dl.HZP dt i {
     background-position: 0 -152px;
 }
 
-/*æœé¥°*/
+/*·şÊÎ*/
 .bang-srp .list dl.FS dt i {
     background-position: 0 -172px;
 }
 
-/*æ–‡ä½“*/
+/*ÎÄÌå*/
 .bang-srp .list dl.WT dt i {
     background-position: 0 -192px;
 }
 
-/*æ¯å©´*/
+/*Ä¸Ó¤*/
 .bang-srp .list dl.MY dt i {
     background-position: 0 -212px;
 }
 
-/*å®¶å±…*/
+/*¼Ò¾Ó*/
 .bang-srp .list dl.JJ dt i {
     background-position: 0 -132px;
 }
 
-/*é£Ÿå“*/
+/*Ê³Æ·*/
 .bang-srp .list dl.SP dt i {
     background-position: 0 -232px;
 }
 
-/*è½¦|ç©å…·|å® ç‰©æ¦œ*/
+/*³µ|Íæ¾ß|³èÎï°ñ*/
 .bang-srp .list dl.OT dt i {
     background-position: 0 -252px;
 }
@@ -3207,7 +3207,7 @@ a.top50 {
 }
 /* }}} */
 
-/* ä¸»æœç´¢åŒåº—è´­å…¥å£ï¼Œå³ä¸Šè§’é‚£ä¸ªæŒ‰é’®ï¼Œ100% {{{ */
+/* Ö÷ËÑË÷Í¬µê¹ºÈë¿Ú£¬ÓÒÉÏ½ÇÄÇ¸ö°´Å¥£¬100% {{{ */
 .list-info {
     position:relative;
 }
@@ -3252,7 +3252,7 @@ a.top50 {
     line-height:16px;
     background-color:#ffffe5;
 }
-/*åŒåº—è´­è¡¨å•*/
+/*Í¬µê¹º±íµ¥*/
 .tdg-form {
     background-color:#FFFFFF;
     border:1px solid #CDCDCD;
@@ -3300,7 +3300,7 @@ a.top50 {
 }
 /*}}}*/
 
-/* æ–°åŠŸèƒ½æç¤º *//*{{{*/
+/* ĞÂ¹¦ÄÜÌáÊ¾ *//*{{{*/
 .newfeature-tip:focus {
     outline: none;
 }
@@ -3343,7 +3343,7 @@ a.top50 {
     width: 180px;
 }/*}}}*/
 
-/* å°å›¾åˆ°å¤§å›¾ ï¼ˆåˆ—è¡¨é¡µé¼ æ ‡hoveræ—¶å‡ºç°çš„æ•ˆæœï¼‰ */
+/* Ğ¡Í¼µ½´óÍ¼ £¨ÁĞ±íÒ³Êó±êhoverÊ±³öÏÖµÄĞ§¹û£© */
 .small2big-popup {
 	display: block;
     visibility: hidden;
@@ -3522,9 +3522,9 @@ button, .btn {
     cursor: not-drop;
 }
 /**
- * å¯¹è¯æ¡†é€šç”¨æ ·å¼
+ * ¶Ô»°¿òÍ¨ÓÃÑùÊ½
  */
-/* å¯¹è¯æ¡†é€šç”¨æ ·å¼ {{{ */
+/* ¶Ô»°¿òÍ¨ÓÃÑùÊ½ {{{ */
 .search-popup-window {
     outline: 0;
     position:fixed;
@@ -3622,7 +3622,7 @@ button, .btn {
 }
 /* }}} */
 
-/* ç™»å½•æ¡†å¼¹å‡ºå±‚é‡ç½® {{{ */
+/* µÇÂ¼¿òµ¯³ö²ãÖØÖÃ {{{ */
 .dialog-login .bd {
     padding: 0;
     height: 250px;
@@ -3639,7 +3639,7 @@ button, .btn {
 }
 
 /**
- * è‡ªå®šä¹‰æœç´¢
+ * ×Ô¶¨ÒåËÑË÷
  */
 .dialog-custom-search .hd {
     height: auto;
@@ -3655,8 +3655,8 @@ button, .btn {
     line-height: 0;
 }
 /**
- * @fileoverview åˆ†é¡µ
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview ·ÖÒ³
+ * @author ÎÄºÓ<wenhe@taobao.com>
  *
  * @license
  * Copyright (c) 2010 Taobao Inc.
@@ -3906,8 +3906,8 @@ button, .btn {
     z-index:999;
 }
 /**
- * @fileoverview æŒ‡ç¤ºæ¡
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview Ö¸Ê¾Ìõ
+ * @author ÎÄºÓ<wenhe@taobao.com>
  */
 .progressbar {
     display: inline-block;
@@ -3940,29 +3940,29 @@ button, .btn {
     -moz-box-shadow: inset 0 1px 1px rgba(255,255,255,0.3);
 }
 
-/* æ©™è‰² */
+/* ³ÈÉ« */
 .progressbar .max {
     background-color: #f5861e;
     border: 1px solid #ee6d0c;
 }
 
-/* è“è‰² (é»˜è®¤) */
+/* À¶É« (Ä¬ÈÏ) */
 .progressbar .medium {
     background-color: #71a2dc;
     border: 1px solid #6091bf;
 }
 
-/* ç°è‰² */
+/* »ÒÉ« */
 .progressbar .min {
     background-color: #a8a8a8;    
     border: 1px solid #969696;
 }
 /**
- * @fileoverview æ˜Ÿæ ‡
- * @author æ°´é—¨<shuimen.xdy@taobao.com>
+ * @fileoverview ĞÇ±ê
+ * @author Ë®ÃÅ<shuimen.xdy@taobao.com>
  */
 /*
- * 10çº§æ˜Ÿæ ‡
+ * 10¼¶ĞÇ±ê
  */
 span.star-0-10 span {
 	width: 0px;
@@ -4034,11 +4034,11 @@ span.star-10-10 span {
   overflow: hidden;
 }
 /**
- * @fileoverview å®è´ç»Ÿè®¡å³è¾¹ï¼Œæ·˜åˆ†äº«ï¼Œæ·˜å§ï¼Œæ’è¡Œæ¦œ
- * @author æ°´é—¨<shuimen.xdy@taobao.com>
+ * @fileoverview ±¦±´Í³¼ÆÓÒ±ß£¬ÌÔ·ÖÏí£¬ÌÔ°É£¬ÅÅĞĞ°ñ
+ * @author Ë®ÃÅ<shuimen.xdy@taobao.com>
  */
 
-/* åˆ†éš”çº¿ */
+/* ·Ö¸ôÏß */
 .list-info .pipe,
 .tbaLink-bottom .pipe {
     display: block;
@@ -4143,7 +4143,7 @@ span.star-10-10 span {
 }
 
 /**
- * æœç´¢å†å²
+ * ËÑË÷ÀúÊ·
  */
 .search-history,
 #history-popup .hd .close-btn,
@@ -4184,11 +4184,11 @@ span.star-10-10 span {
 }
 
 /**
- * @fileoverview æœç´¢æ¡†
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview ËÑË÷¿ò
+ * @author ÎÄºÓ<wenhe@taobao.com>
  *
  */
-/* é¡¶éƒ¨æœç´¢æ¡† {{{ */
+/* ¶¥²¿ËÑË÷¿ò {{{ */
 .search-auto, 
 .search-form .input, 
 .search-tab li.selected, 
@@ -4325,7 +4325,7 @@ span.star-10-10 span {
     background-position: -139px -36px ;
     z-index: 1;
     right: 0;
-    _right: -1px; /*IE6 å¥‡æ•°å®šä½bug*/
+    _right: -1px; /*IE6 ÆæÊı¶¨Î»bug*/
 }
 .search-form form .input input {
     position: absolute;
@@ -4337,7 +4337,7 @@ span.star-10-10 span {
     padding: 7px 6px;
     padding: 8px 6px 6px\9;
     height: 18px;
-    font: 14px/18px verdana,tahoma,arial,å®‹ä½“,sans-serif;
+    font: 14px/18px verdana,tahoma,arial,ËÎÌå,sans-serif;
 }
 .search-form form .input input:focus {
     outline-color: #f61;
@@ -4363,12 +4363,12 @@ span.star-10-10 span {
     margin-left:-1px;
     border: 1px solid #ACBABD !important;
 }
-/*è¾“å…¥æ¡†å¤±å»ç„¦ç‚¹*/
+/*ÊäÈë¿òÊ§È¥½¹µã*/
 input.blur {
     color:#bababa;
 }
 /* }}} */
-/* æœç´¢é€‰é¡¹ {{{ */
+/* ËÑË÷Ñ¡Ïî {{{ */
 #search-options {
     margin: 5px;
 }
@@ -4385,7 +4385,7 @@ input.blur {
     margin-left: 2px;
 }
 /* }}} */
-/* åº•éƒ¨æœç´¢æ¡† {{{ */
+/* µ×²¿ËÑË÷¿ò {{{ */
 .search-bottom {
     padding: 20px 0;
     background: #Fff7e5;
@@ -4401,7 +4401,7 @@ input.blur {
     width: 441px;
     overflow: hidden;
 }
-/*é¡¶éƒ¨æœç´¢æ¡†æ”¹æˆæ·˜å®è‰²ï¼Œåº•éƒ¨çš„æœç´¢æ¡†ä¿æŒåŸæ ·*/
+/*¶¥²¿ËÑË÷¿ò¸Ä³ÉÌÔ±¦É«£¬µ×²¿µÄËÑË÷¿ò±£³ÖÔ­Ñù*/
 .search-bottom form .input ,
 .search-bottom form .input .l,
 .search-bottom form .input .r {
@@ -4495,14 +4495,14 @@ input.blur {
 }
 /* }}} */
 
-/* æœç´¢æç¤ºfix {{{ */
+/* ËÑË÷ÌáÊ¾fix {{{ */
 .ks-suggest-container {
     width: 460px !important;
     margin-left: 2px;
 }
 /* }}} */
 
-/*å¤šå•†å“æœç´¢ åº—é“ºlist*/
+/*¶àÉÌÆ·ËÑË÷ µêÆÌlist*/
 .shop-list{
     margin:13px 0;
 }
@@ -4623,7 +4623,7 @@ input.blur {
     margin-left:10px;
     width:95px;
 }
-/*åº—é“ºåŠ¨æ€è¯„åˆ†æ ·å¼:fromåº—é“ºæœç´¢*/
+/*µêÆÌ¶¯Ì¬ÆÀ·ÖÑùÊ½:fromµêÆÌËÑË÷*/
 .c-value-no{
     background: url(//img04.taobaocdn.com/tps/i4/T1k.xmXolhXXXXXXXX-215-864.png) no-repeat scroll 500px 1000px transparent;
 }
@@ -4748,8 +4748,8 @@ input.blur {
 .c-value-0 {
     background-position: 0 -632px;
 }
-/*End å¤šå•†å“æœç´¢*/
-/*åŒåº—è´­noresult*/
+/*End ¶àÉÌÆ·ËÑË÷*/
+/*Í¬µê¹ºnoresult*/
 .ms-noresult{
     margin:50px 0 0 35px;
     padding-top:10px;
@@ -4808,14 +4808,14 @@ input.blur {
 }
 /*end no-result*/
 /*
-å¯è§†åŒ–ç±»ç›®/å±æ€§ç­›é€‰æ ·å¼
-é˜¿å¤§ ada@taobao.com
+¿ÉÊÓ»¯ÀàÄ¿/ÊôĞÔÉ¸Ñ¡ÑùÊ½
+°¢´ó ada@taobao.com
 2011-03-06 01:25:04  
 */
 
 /*
-é€šè¿‡ç»™çˆ¶çº§å…ƒç´ æ·»åŠ mixed-visual-typeç±»ï¼Œ
-æ¥é˜²æ­¢æ–°æ ·å¼ä¸å°±æ ·å¼çš„å†²çª
+Í¨¹ı¸ø¸¸¼¶ÔªËØÌí¼Ómixed-visual-typeÀà£¬
+À´·ÀÖ¹ĞÂÑùÊ½Óë¾ÍÑùÊ½µÄ³åÍ»
 */
 .mixed-visual-type .all-cate {
     display: block;
@@ -4847,7 +4847,7 @@ input.blur {
 	height: 50px;	
 }
 
-/*æ›´å¤šiconçš„æ ·å¼ {{=*/
+/*¸ü¶àiconµÄÑùÊ½ {{=*/
 .mixed-visual-type .cate-panel .show-more,
 .mixed-visual-type .prop-list .more {
 	top:40px;
@@ -4897,8 +4897,8 @@ input.blur {
 
 
 /*
-å¤šè¡Œå†…å®¹å‚ç›´å±…ä¸­æ ·å¼ï¼Œ
-å­˜åœ¨å…¼å®¹æ€§é—®é¢˜ï¼Œæš‚æ—¶ç”¨hackçš„æ–¹å¼ç»“å±€ã€‚
+¶àĞĞÄÚÈİ´¹Ö±¾ÓÖĞÑùÊ½£¬
+´æÔÚ¼æÈİĞÔÎÊÌâ£¬ÔİÊ±ÓÃhackµÄ·½Ê½½á¾Ö¡£
 */
 /*
 .mixed-visual-type .hot-pro dd li {
@@ -4947,10 +4947,10 @@ input.blur {
 */
 
 /*
-å—çŠ¶æ˜¾ç¤ºçƒ­é—¨å±æ€§
+¿é×´ÏÔÊ¾ÈÈÃÅÊôĞÔ
 */
 
-/*çƒ­é—¨å±æ€§ä¸æ˜¾ç¤ºå·¦ä¾§çš„å±æ€§æ ‡é¢˜ {{=*/
+/*ÈÈÃÅÊôĞÔ²»ÏÔÊ¾×ó²àµÄÊôĞÔ±êÌâ {{=*/
 .mixed-visual-type .hot-pro dt {
 	display:none;
 }
@@ -4981,7 +4981,7 @@ input.blur {
 	border:1px solid #e6e6e6;	
 	color:#404040;
 	
-	/*CSSå®ç°èƒŒæ™¯æ¸å˜*/
+	/*CSSÊµÏÖ±³¾°½¥±ä*/
 	background: #fbfbfb;  
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffefefe, endColorstr=#fff2f2f2); 
 	background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f2f2f2)); 
@@ -4995,19 +4995,19 @@ input.blur {
 	border-color:#ffcc7f;
 	color:#404040;
 	
-	/*æ‚¬åœæ—¶çš„èƒŒæ™¯æ¸å˜*/
+	/*ĞüÍ£Ê±µÄ±³¾°½¥±ä*/
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffefefe, endColorstr=#ffffffe5); 
 	background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ffffe5)); 
 	background: -moz-linear-gradient(top, #fefefe, #ffffe5); 
 }
 
-/*æ›´å¤šçš„å±æ€§å†…å®¹*/
+/*¸ü¶àµÄÊôĞÔÄÚÈİ*/
 .mixed-visual-type .hot-pro dd .moreValue {
 	clear:both;
 	border:none;
 }
 
-/*åœ¨é“¾æ¥å†…éƒ¨å†å¥—ä¸€å±‚spançš„ä½œç”¨æ˜¯å½“å†…å®¹æº¢å‡ºæ—¶ï¼Œä¸è‡³äºæ’‘æ»¡å®¹å™¨ï¼Œä¿æŒä¸€å®šçš„è¾¹è·*/
+/*ÔÚÁ´½ÓÄÚ²¿ÔÙÌ×Ò»²ãspanµÄ×÷ÓÃÊÇµ±ÄÚÈİÒç³öÊ±£¬²»ÖÁÓÚ³ÅÂúÈİÆ÷£¬±£³ÖÒ»¶¨µÄ±ß¾à*/
 .mixed-visual-type .hot-pro dd li a span {
 	display:block;
 	overflow:hidden;
@@ -5018,16 +5018,16 @@ input.blur {
 	margin:3px 4px;
 	text-align:center;
 }
-/*åªæœ‰ä¸€è¡Œå†…å®¹æ—¶çš„å±…ä¸­æ˜¾ç¤ºhackï¼Œéœ€è¦å¼€å‘åœ¨é¡µé¢ç»™liå…ƒç´ é™„åŠ æ ·å¼ï¼šol*/
+/*Ö»ÓĞÒ»ĞĞÄÚÈİÊ±µÄ¾ÓÖĞÏÔÊ¾hack£¬ĞèÒª¿ª·¢ÔÚÒ³Ãæ¸øliÔªËØ¸½¼ÓÑùÊ½£ºol*/
 .mixed-visual-type .hot-pro dd li.ol a span {
 	height:25px;
 	margin-top:12px;
 }
 /**
- * @fileoverview åœ°å›¾
- * @author æ°´é—¨<shuimen.xdy@taobao.com>
+ * @fileoverview µØÍ¼
+ * @author Ë®ÃÅ<shuimen.xdy@taobao.com>
  * @description
- * åœ°å›¾å…¥å£å¼¹å‡ºå±‚
+ * µØÍ¼Èë¿Úµ¯³ö²ã
  */
 .ditu-entrance{
     cursor:pointer;
@@ -5084,9 +5084,9 @@ input.blur {
     z-index: 21;
 }
 /* *
- * åˆå¹¶åŒæ¬¾ åˆå¹¶åŒå–å®¶ ç­‰
+ * ºÏ²¢Í¬¿î ºÏ²¢Í¬Âô¼Ò µÈ
  * */
-/*åˆå¹¶åŒæ¬¾å®è´*/
+/*ºÏ²¢Í¬¿î±¦±´*/
 .combine-item {
     border:1px solid #e0e6f0;
     background: #f7faff;
@@ -5137,7 +5137,7 @@ input.blur {
     margin-left:10px;
 }
 
-/*å¤§å›¾ï¼šåˆå¹¶åŒæ¬¾ï¼Œåˆå¹¶å–å®¶*/
+/*´óÍ¼£ººÏ²¢Í¬¿î£¬ºÏ²¢Âô¼Ò*/
 .list-view-enlarge .related-items, .list-view-enlarge .related-item, .list-view-enlarge .related-seller {
     float:left;
     width:218px;
@@ -5208,7 +5208,7 @@ input.blur {
     margin:3px 3px 0;
 }
 
-/*å°å›¾ï¼šåˆå¹¶å–å®¶ ç›¸å…³å®è´*/
+/*Ğ¡Í¼£ººÏ²¢Âô¼Ò Ïà¹Ø±¦±´*/
 .list-combine .list-view ul.attribute li.price {
     width: 255px;
 }
@@ -5262,7 +5262,7 @@ input.blur {
     right:10px;
     height:22px;
 }
-/* åˆå¹¶åŒæ¬¾å åœ¨åˆ—è¡¨æ¨¡å¼ä¸‹çš„ æˆ‘è¦è´­ä¹° æŒ‰é’®*/
+/* ºÏ²¢Í¬¿îºó ÔÚÁĞ±íÄ£Ê½ÏÂµÄ ÎÒÒª¹ºÂò °´Å¥*/
 .list-combine .list-view .button a {
     display:block;
     width:90px;
@@ -5287,7 +5287,7 @@ input.blur {
 
 /**
  * @fileoverview Buy History(Login to see)
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @author ÎÄºÓ<wenhe@taobao.com>
  */
 /* Background: http://img01.taobaocdn.com/tps/i1/T1QPJNXdpGXXXXXXXX.png */
 .shopping-history {
@@ -5463,8 +5463,8 @@ input.blur {
     outline: 1px solid #fc3;
     background-color: #ffffe0;
 }
-/* ä¸­æ–‡å ä½ */
-/*å·¥å…·æ¡ã€è¿‡æ»¤æ */
+/* ÖĞÎÄÕ¼Î» */
+/*¹¤¾ßÌõ¡¢¹ıÂËÀ¸*/
 .filter {
     margin-top: 10px;
     width: 760px;
@@ -5570,14 +5570,14 @@ input.blur {
     text-indent:-999em;
     border: none;
 }
-/*-------- ç­›é€‰åŒºè¡¨å• ------*/
+/*-------- É¸Ñ¡Çø±íµ¥ ------*/
 #filterForm {
     background:#F7FAFF;
     color:#404040;
     border: 1px solid #D8D8D8;
     padding: 3px 10px;
     margin-bottom: -1px;
-    _padding-right: 7px; /*fix IE6 é‡å¤å­—bug*/
+    _padding-right: 7px; /*fix IE6 ÖØ¸´×Öbug*/
 }
 #filterForm fieldset legend {
     display: none;
@@ -5613,7 +5613,7 @@ input.blur {
 #filterExclude {
     width: 90px;
 }
-/*ä¸‹æ‹‰*/
+/*ÏÂÀ­*/
 .fineness,
 .type,
 .store {
@@ -5826,7 +5826,7 @@ input.blur {
 .toolbar a:hover {
     color: #f60;
 }
-/*å±•ç¤ºæ–¹å¼*/
+/*Õ¹Ê¾·½Ê½*/
 .toolbar .mode {
     margin-left: 9px;
     display: inline;
@@ -5866,7 +5866,7 @@ input.blur {
 .toolbar .thumb-mode a:hover span {
     background-position: -2px -370px;
 }
-/*æ’åº*/
+/*ÅÅĞò*/
 .toolbar .order {
     line-height: 19px;
     position: relative;
@@ -5921,7 +5921,7 @@ input.blur {
     padding-left: 23px;
     background-position: 0 -1254px;
 }
-/*æ’åºé€‰é¡¹åˆ—è¡¨*/
+/*ÅÅĞòÑ¡ÏîÁĞ±í*/
 .toolbar .order-options {
     position: absolute;
     left: 28px;
@@ -5978,7 +5978,7 @@ input.blur {
 .order-options li.by-market-desc a {
     background-position: 5px -1252px;
 }
-/*ä»·æ ¼ï¼Œé”€é‡ï¼Œä¿¡ç”¨*/
+/*¼Û¸ñ£¬ÏúÁ¿£¬ĞÅÓÃ*/
 .toolbar .by-credit span,.toolbar .by-price span,.toolbar .by-sale span {
     display: none;
 }
@@ -6021,7 +6021,7 @@ input.blur {
     background-position: -92px -153px;
     z-index: 1;
 }
-/*ä»·æ ¼èŒƒå›´*/
+/*¼Û¸ñ·¶Î§*/
 .toolbar li.price-wrapper {
     margin-left: 3px;
     width: 80px;
@@ -6061,7 +6061,7 @@ input.blur {
 .toolbar .price-selected .sub-menu {
     display: block;
 }
-/*æ‰€åœ¨åœ°*/
+/*ËùÔÚµØ*/
 .toolbar .location {
     margin-left: 24px;
     margin-right: 10px;
@@ -6144,7 +6144,7 @@ display: block;
     padding-left: 30px;
 }
 
-/*å¤šå•†å“æœç´¢ å·¥å…·æ¡*/
+/*¶àÉÌÆ·ËÑË÷ ¹¤¾ßÌõ*/
 #filterForm.ms-filter div.advanced {
     border-top: none;
 }
@@ -6200,7 +6200,7 @@ display: block;
     background-position: right -778px;
 } 
 
-/* ä¸ªæ€§åŒ–åŠŸèƒ½å®šåˆ¶çš„å°é»„æ¡ */
+/* ¸öĞÔ»¯¹¦ÄÜ¶¨ÖÆµÄĞ¡»ÆÌõ */
 .filter .notice-bar {
     position: relative;
     background: #ffffe5;
@@ -6247,7 +6247,7 @@ display: block;
 .J_Invid div.invid-item span.hl-mark{
 	color:#0063dc;
 }
-/*-------- Filter: Mybaby æ¯å©´å‚ç›´ç±»ç›® ä¸ªæ€§åŒ–ç­›é€‰ ------*/
+/*-------- Filter: Mybaby Ä¸Ó¤´¹Ö±ÀàÄ¿ ¸öĞÔ»¯É¸Ñ¡ ------*/
 #mybaby-login-tip {
     position: absolute;
     right: 8px;
@@ -6261,8 +6261,8 @@ display: block;
     color: #ff4a00;
 }
 /**
- * @fileoverview å•ä»·æ’åº
- * @author æ°´é—¨<shuimen.xdy@taobao.com>
+ * @fileoverview µ¥¼ÛÅÅĞò
+ * @author Ë®ÃÅ<shuimen.xdy@taobao.com>
  */
 .toolbar .order .by-unitprice {
     background-position: -102px -560px;
@@ -6285,7 +6285,7 @@ display: block;
 }
 
 /**
- * @fileoverview ä»·æ ¼åŒºé—´ 
+ * @fileoverview ¼Û¸ñÇø¼ä 
  */
 .price-range {
     float: left;
@@ -6298,7 +6298,7 @@ display: block;
     color: #0063dc;
     position: relative;
     float: left;
-    /*cursor:pointer;*/ /* å¯èƒ½æ˜¯é“¾æ¥ å¯èƒ½ä¸æ˜¯é“¾æ¥çš„ä¸œè¥¿  ä¸è¦åŠ cursor */
+    /*cursor:pointer;*/ /* ¿ÉÄÜÊÇÁ´½Ó ¿ÉÄÜ²»ÊÇÁ´½ÓµÄ¶«Î÷  ²»Òª¼Ócursor */
 }
 .price-range-order:hover {
     text-decoration: none;
@@ -6353,8 +6353,8 @@ display: block;
 }
 
 /**
- * @fileoverview äºŒç»´æ’åºæ¡
- * @author ä¸˜è¿Ÿ <qiuchi@taobao.com>
+ * @fileoverview ¶şÎ¬ÅÅĞòÌõ
+ * @author Çğ³Ù <qiuchi@taobao.com>
  */
 #rankbar {
     position: relative;
@@ -6411,10 +6411,10 @@ display: block;
 }
 #rankbar h4 {
     float: left;
-    font: 100 12px/1 'å®‹ä½“', serif;
+    font: 100 12px/1 'ËÎÌå', serif;
     padding: 8px auto;
 }
-/* æ ‡é¢˜ */
+/* ±êÌâ */
 #rankbar .h-tip {
     padding: 9px 5px 7px 12px;
     color: #808080;
@@ -6431,7 +6431,7 @@ display: block;
     float: left;
     /*overflow: hidden;*/
 }
-/*-- æ’åºæŒ‰é’® --*/
+/*-- ÅÅĞò°´Å¥ --*/
 #rankbar .sorting-btns {
     /*margin-left: -1px;*/
     border-left: 1px solid #cecece;
@@ -6522,7 +6522,7 @@ display: block;
     vertical-align: middle;
 }
 
-/* ä»·æ ¼ */
+/* ¼Û¸ñ */
 #rank-priceform {
     float: left;
     height: 28px;
@@ -6566,7 +6566,7 @@ display: block;
     display: block;
 }
 
-/*-- toggle switch å¼€å…³æ ·å¼ --*/
+/*-- toggle switch ¿ª¹ØÑùÊ½ --*/
 #rankbar .tgl-switch {
     position: absolute;
     top: 5px;
@@ -6583,7 +6583,7 @@ display: block;
     background: -moz-linear-gradient(50% 0, #fefefe, #f2f2f2);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#fefefe', EndColorStr='#f2f2f2');
     border: 1px solid #a6a6a6;
-    /* ä¸åŠ ZOOM IE6,7ä¸‹æ¸å˜èƒŒæ™¯å°±ä¸å‡ºçº¿ */
+    /* ²»¼ÓZOOM IE6,7ÏÂ½¥±ä±³¾°¾Í²»³öÏß */
     zoom: 1;
 }
 #rankbar .tgl-switch a span {
@@ -6658,7 +6658,7 @@ display: block;
     background-position: 3px -2290px;
 }
 
-/*-- select location æ‰€åœ¨åœ° --*/
+/*-- select location ËùÔÚµØ --*/
 #sel-loc {
     position: absolute;
     top: 5px;
@@ -7015,27 +7015,27 @@ display: block;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5)); /* for webkit browsers */ 
     background: -moz-linear-gradient(top,  #ffffff,  #f5f5f5); /* for firefox 3.6+ */ 
 }
-/* ä¸­æ–‡å ä½ */
+/* ÖĞÎÄÕ¼Î» */
 
 
 /**
  * List icons
- * ç»“æœåˆ—è¡¨çš„å„ç§ icon (å‚ç…§ images/srp-icons.psd)
+ * ½á¹ûÁĞ±íµÄ¸÷ÖÖ icon (²ÎÕÕ images/srp-icons.psd)
  * @author qiuchi@taobao.com
  */
 
 /**
- * å‘½åçº¦å®šï¼š
+ * ÃüÃûÔ¼¶¨£º
  *
- * .icon-xxx xxxä¸è¦ç”¨ä¼¼æ‡‚éæ‡‚çš„è‹±è¯­ï¼Œæ‹¼éŸ³å³å¯
+ * .icon-xxx xxx²»ÒªÓÃËÆ¶®·Ç¶®µÄÓ¢Óï£¬Æ´Òô¼´¿É
  *
- * åº”å°½é‡ä¿è¯åˆ—è¡¨å’Œå¤§å›¾æ¨¡å¼ä¸‹çš„htmlç»“æ„ä¸€æ ·
+ * Ó¦¾¡Á¿±£Ö¤ÁĞ±íºÍ´óÍ¼Ä£Ê½ÏÂµÄhtml½á¹¹Ò»Ñù
  *
- * ä¸ç¬¦åˆè§„èŒƒçš„ï¼Œå¤§éƒ¨åˆ†æ—¶å†å²é—ç•™ï¼Œä¸ç®¡
+ * ²»·ûºÏ¹æ·¶µÄ£¬´ó²¿·ÖÊ±ÀúÊ·ÒÅÁô£¬²»¹Ü
  *
  */
 
-/*ä¿éšœå›¾æ ‡*/
+/*±£ÕÏÍ¼±ê*/
 .legend2 {
     overflow: hidden;
     zoom: 1;
@@ -7083,7 +7083,7 @@ display: block;
     background-position: -2px -529px;
 }
 
-/*çˆ±å¿ƒå®è´ï¼Œå…¨çƒè´­ï¼Œé¦™æ¸¯å•†å®¶ï¼Œæ‹…ä¿äº¤æ˜“ï¼Œå¯„å”®äº¤æ˜“å›¾æ ‡*/
+/*°®ĞÄ±¦±´£¬È«Çò¹º£¬Ïã¸ÛÉÌ¼Ò£¬µ£±£½»Ò×£¬¼ÄÊÛ½»Ò×Í¼±ê*/
 .lovebaobei, .globalbuy, .hkshop, .vouch, .consignment {
     width: 17px;
     height: 19px;
@@ -7115,7 +7115,7 @@ display: block;
 .consignment {
     background-position: -5px -699px;
 }
-/*ä¿¡ç”¨å¡ï¼ŒæŠ˜æ‰£*/
+/*ĞÅÓÃ¿¨£¬ÕÛ¿Û*/
 .creditcard {
     background-position: -3px -588px;
     overflow: hidden;
@@ -7125,11 +7125,11 @@ display: block;
     background-position: -122px -174px;
     width: 39px;
     height: 16px;
-    text-indent: 50px; /* è´Ÿå€¼ä¸ç”Ÿæ•ˆ å¾ˆæ˜æ˜¾æ˜¯iconï¼Œæ­£å€¼åªéœ€å¤§äºå®½åº¦å³å¯ */
+    text-indent: 50px; /* ¸ºÖµ²»ÉúĞ§ ºÜÃ÷ÏÔÊÇicon£¬ÕıÖµÖ»Ğè´óÓÚ¿í¶È¼´¿É */
     overflow: hidden;
 }
 
-/*è´§åˆ°ä»˜æ¬¾ï¼Œè‡ªåŠ¨å‘è´§*/
+/*»õµ½¸¶¿î£¬×Ô¶¯·¢»õ*/
 .COD {
     background-position: -3px -604px;
     overflow: hidden;
@@ -7152,7 +7152,7 @@ display: block;
     background-position: -200px -521px;
 }
 
-/*åº¦é‡è¡¡*/
+/*¶ÈÁ¿ºâ*/
 .measure-icon {
     color: #808080;
     display: block;
@@ -7208,7 +7208,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     margin-right:6px;
 }
 
-/*---------å•†åŸ--------------*/
+/*---------ÉÌ³Ç--------------*/
 .mall-icon,
 .shoe-mall-icon,
 .nameless-good-icon,
@@ -7234,7 +7234,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     padding-left: 3px;
     margin-top: -2px;
 }
-/*å•†åŸå›¾æ ‡*/
+/*ÉÌ³ÇÍ¼±ê*/
 .mall-icon {
     background-position: 0 -620px;
     width: 72px;
@@ -7247,7 +7247,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     height: 18px;
     width: 25px;
 }
-/*å•†åŸ ç½‘ç»œè¶…å¸‚*/
+/*ÉÌ³Ç ÍøÂç³¬ÊĞ*/
 .icon-chaoshi {
     width: 72px;
     background-position: 0 -692px;
@@ -7260,41 +7260,41 @@ span.measure-icon span.l, span.measure-icon span.r {
     width: 28px;
     height: 20px;
 }
-/*å¿«ä¹æ·˜å®*/
+/*¿ìÀÖÌÔ±¦*/
 .hi-tao {
     background-position: -26px -602px;
     width: 27px;
 }
-/*é‹åŸ*/
+/*Ğ¬³Ç*/
 .shoe-mall-icon {
     background-position: 0 -638px;
 }
-/*ç”µå™¨åŸå›¾æ ‡*/
+/*µçÆ÷³ÇÍ¼±ê*/
 .digital-icon {
     background-position: 0 -656px;
 }
-/*å®¶è£…é¦†*/
+/*¼Ò×°¹İ*/
 .family-decoration-icon {
     background-position: 0 -674px;
 }
 
-/*æŒæŸœçƒ­å–*/
+/*ÕÆ¹ñÈÈÂô*/
 .shopkeeper-hot-sell {
     background-position: -88px -620px;
     width: 50px;
 }
-/*æ— åè‰¯å“*/
+/*ÎŞÃûÁ¼Æ·*/
 .nameless-good-icon {
     background-position: -88px -638px;
     width: 25px;
 }
 
-/*åˆ†é”€å¹³å°icon*/
+/*·ÖÏúÆ½Ì¨icon*/
 .legend2 a.fenxiaopingtai-cert span {
     background:url(http://img02.taobaocdn.com/tps/i2/T1OjtUXf8FXXXXXXXX.png) no-repeat 2px 3px;
 }
 
-/* ç‰¹æ®Šç±»ç›®å‡ºç°çš„ icon */
+/* ÌØÊâÀàÄ¿³öÏÖµÄ icon */
 .icon-zichong,
 .icon-zifa,
 .icon-daichong {
@@ -7307,7 +7307,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     background-position: 50% -76px;
 }
 
-/*-------- åˆ—è¡¨æ¨¡å¼ï¼Œæ‰€åœ¨åœ°ä¸‹é¢å¸¦æ–‡å­—çš„iconï¼ŒåŒ…æ‹¬ è‡ªåŠ¨å‘è´§ è‡ªåŠ¨å……å€¼ ç­‰ ------*/
+/*-------- ÁĞ±íÄ£Ê½£¬ËùÔÚµØÏÂÃæ´øÎÄ×ÖµÄicon£¬°üÀ¨ ×Ô¶¯·¢»õ ×Ô¶¯³äÖµ µÈ ------*/
 .list-view .place .icon {
     display: block;
     padding-top: 22px;
@@ -7329,7 +7329,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     padding: 0 0 0 20px;
 }
 
-/*-------- å¤§å›¾æ¨¡å¼çš„ icons ------*/
+/*-------- ´óÍ¼Ä£Ê½µÄ icons ------*/
 .legend2 .icon,
 .icon-area .icon {
     width: 18px;
@@ -7338,12 +7338,12 @@ span.measure-icon span.l, span.measure-icon span.r {
     color: gray;
 }
 
-/*-------- å¥³è£… å®ç‰©å›¾ ------*/
+/*-------- Å®×° ÊµÎïÍ¼ ------*/
 .icon-xijie {
     background: url(http://img02.taobaocdn.com/tps/i2/T12PV.XbxCXXXXXXXX-16-16.png) no-repeat 50% 50%;
 }
 
-/*-------- å£ç¢‘ å®ä½“åº— ------*/
+/*-------- ¿Ú±® ÊµÌåµê ------*/
 .icon-shiti {
     background: url(http://img03.taobaocdn.com/tps/i3/T1s3udXc8yXXXXXXXX-16-16.png) no-repeat 1px 50%;
 }
@@ -7402,7 +7402,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     background-position:-2px -1219px;
     margin:2px 0 0;
 }
-/*æ›´å¤šå›¾æ ‡*/
+/*¸ü¶àÍ¼±ê*/
 .list-view-enlarge .icon-wrapper {
     display:none;
     position:absolute;
@@ -7414,7 +7414,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     overflow:visible;
     background:#fff;
 }
-/*ä¸‰è§’*/
+/*Èı½Ç*/
 .list-view-enlarge .icon-wrapper .arrow, .list-view-enlarge .icon-wrapper .arrow s {
     position:absolute;
     top:-7px;
@@ -7435,7 +7435,7 @@ span.measure-icon span.l, span.measure-icon span.r {
     _top:0;
     border-bottom:7px solid #fff;
 }
-/*åç‰‡ä¿¡æ¯*/
+/*ÃûÆ¬ĞÅÏ¢*/
 ul.attribute .shopinfo {
     vertical-align: middle;
 	background-position: -86px -660px;
@@ -7450,7 +7450,7 @@ ul.attribute .shopinfo {
     right: 0px;
     bottom: 0;
 }
-/*åº—é“ºä¿¡æ¯æµ®å±‚*/
+/*µêÆÌĞÅÏ¢¸¡²ã*/
 .popup-shopinfo {
     color:#666;
 }
@@ -7552,8 +7552,8 @@ ul.attribute .shopinfo {
     color:#fff;
 }
 /*
- * æŒ‰åº—é“ºå±•ç¤º
- * @author ä¸˜è¿Ÿ
+ * °´µêÆÌÕ¹Ê¾
+ * @author Çğ³Ù
  */
 .uniq-shop strong {
     font-weight: 700;
@@ -7609,7 +7609,7 @@ ul.attribute .shopinfo {
     color: green;
 }
 .uniq-shop .count {
-    font-family: 'å®‹ä½“';
+    font-family: 'ËÎÌå';
 }
 .uniq-shop .count strong {
     font-size: 14px;
@@ -7618,7 +7618,7 @@ ul.attribute .shopinfo {
     font-size: 11px;
 }
 
-/* å›¾æ ‡ */
+/* Í¼±ê */
 .uniq-shop .legend2 {
     line-height: 18px;
     margin-bottom: 8px;
@@ -7641,7 +7641,7 @@ ul.attribute .shopinfo {
 .uniq-shop .shop-rank a {
     display: inline-block;
 }
-/* -- END å›¾æ ‡ */
+/* -- END Í¼±ê */
 
 
 .uniq-shop .shop-items .list-item {
@@ -7659,11 +7659,11 @@ ul.attribute .shopinfo {
 .uniq-shop .placeholder .photo a span {
 }
 /**
- * @fileoverview etao P4På¹¿å‘Š
- * @author æ°´é—¨<shuimen.xdy@taobao.com>
+ * @fileoverview etao P4P¹ã¸æ
+ * @author Ë®ÃÅ<shuimen.xdy@taobao.com>
  */
 /*
- * è¦†ç›–èƒŒæ™¯é¢œè‰²
+ * ¸²¸Ç±³¾°ÑÕÉ«
  */
 .p4p-etao-sidebar{
 	background-color:#fff;
@@ -7673,7 +7673,7 @@ ul.attribute .shopinfo {
 	color:red;
 }
 /*
- * æ ‡é¢˜
+ * ±êÌâ
  */
 .etao-sidebar-title{
 	height:38px;
@@ -7681,7 +7681,7 @@ ul.attribute .shopinfo {
 	background:url("//img04.taobaocdn.com/tps/i4/T1enSaXeltXXXXXXXX-180-69.png") no-repeat 0px 0px;
 }
 /*
- * ç›¸å…³æ•°æ®
+ * Ïà¹ØÊı¾İ
  */
 .etao-sidebar-relation{
 	background-color:#fffbe6;
@@ -7689,7 +7689,7 @@ ul.attribute .shopinfo {
 	border-bottom:1px dashed #ccc;
 }
 /*
- * æœç´¢å…³é”®è¯
+ * ËÑË÷¹Ø¼ü´Ê
  */
 .etao-sidebar-relation .relation-hd strong{
 	margin-left:5px;
@@ -7697,7 +7697,7 @@ ul.attribute .shopinfo {
 	color:#FF2900;
 }
 /*
- * ç›¸å…³å†…å®¹
+ * Ïà¹ØÄÚÈİ
  */
 .etao-sidebar-relation .relation-bd .left,
 .etao-sidebar-relation .relation-bd .right{
@@ -7719,8 +7719,8 @@ ul.attribute .shopinfo {
 	vertical-align:baseline;
 }
 /*
- * etaoå•†å“æ¨è
- * äº§å“è¯å’Œéæ ‡ç±»
+ * etaoÉÌÆ·ÍÆ¼ö
+ * ²úÆ·´ÊºÍ·Ç±êÀà
  */
 .etao-sidebar-item{
 	background-color:#fff;
@@ -7764,7 +7764,7 @@ ul.attribute .shopinfo {
 	overflow:hidden;
 }
 /*
- * æ›´å¤šæŒ‰é’®
+ * ¸ü¶à°´Å¥
  */
 .etao-sidebar-more{
 	height:40px;
@@ -7785,7 +7785,7 @@ ul.attribute .shopinfo {
 	margin-right:8px;
 }
 /*
- * åˆä½œå•†å®¶åˆ—è¡¨
+ * ºÏ×÷ÉÌ¼ÒÁĞ±í
  */
 .etao-sidebar-recommend{
 	background-color:#f6f6f6;
@@ -7852,7 +7852,7 @@ ul.attribute .shopinfo {
 	*zoom:1;
 }
 /*
- * éæ ‡ç±»
+ * ·Ç±êÀà
  */
 .etao-sidebar-nondefault .item-name,
 .etao-sidebar-nondefault .item-name a{
@@ -7866,7 +7866,7 @@ ul.attribute .shopinfo {
 	*display:block;
 }
 /*
- * ä»·æ ¼æ ‡ç­¾
+ * ¼Û¸ñ±êÇ©
  */
 .etao-sidebar-recommend .price i,
 .etao-sidebar-nondefault .price i{
@@ -7920,7 +7920,7 @@ div.p4p-loaded {
     background-image: none;
 }
 
-/* ä¾§è¾¹æ  */
+/* ²à±ßÀ¸ */
 div.hesper-sidebar strong {
     color: #ff2900;
     font-weight:bold;
@@ -8062,7 +8062,7 @@ div.hesper-sidebar .p4p-more a span {
     display:none;
 }
 
-/* åº•éƒ¨ */
+/* µ×²¿ */
 .p4p-tabbed {
     clear: both;
     overflow: hidden;
@@ -8096,7 +8096,7 @@ div.hesper-sidebar .p4p-more a span {
     padding:0;
     list-style:none;
     overflow:hidden;
-    position: relative; /* è§£å†³IE6 æº¢å‡ºéšè—å¤±æ•ˆé—®é¢˜ */
+    position: relative; /* ½â¾öIE6 Òç³öÒş²ØÊ§Ğ§ÎÊÌâ */
 }
 .addLocAndSell .tab-container ul.p4p-list {
     height:260px;
@@ -8241,7 +8241,7 @@ div.hesper-sidebar .p4p-more a span {
     background-position:-105px -248px;
 }
 
-/* æ— ç»“æœ */
+/* ÎŞ½á¹û */
 .p4p-banner ,.p4p-banner .tab-container,.p4p-banner .p4p-title {
     background: transparent url(//a.tbcdn.cn/sys/p4p/img/hesper_btm_bg.png) no-repeat 0 0;
 }
@@ -8401,7 +8401,7 @@ div.hesper-sidebar .p4p-more a span {
 }
 
 /**
- * åº—é“ºP4P
+ * µêÆÌP4P
  */
 .act-info {
     width: 160px;
@@ -8490,14 +8490,14 @@ ul.p4p-list .pic {
     display: block;
 }
 /*
- * hack æ·˜å®å®¢çš„p4p scrollloadé—®é¢˜
+ * hack ÌÔ±¦¿ÍµÄp4p scrollloadÎÊÌâ
  */
 #J_b2b_ilike{
     width:182px;
 }
 /**
- * @fileoverview äº§å“æœæ—§ç‰ˆcombo
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview ²úÆ·ËÑ¾É°æcombo
+ * @author ÎÄºÓ<wenhe@taobao.com>
  *
  * @license
  * Copyright (c) 2010 Taobao Inc.
@@ -8535,7 +8535,7 @@ ul.p4p-list .pic {
     clear: both; 
     visibility: hidden;
 }
-/*list-combo äº§å“combo*/
+/*list-combo ²úÆ·combo*/
 .list-combo{border:1px solid #E5E5E5;margin-top:5px;width:648px;height:82px;_height:1%;position:relative;padding:15px 0 15px 110px;background-position:0 -741px;}
 .list-combo .photo{width:80px;height:80px;overflow:hidden;border:1px solid #D9D9D9;float:left;margin-left:-100px;display:inline;}
 .list-combo .photo a{width:80px;height:80px;*font-size:70px;}
@@ -8569,11 +8569,11 @@ ul.p4p-list .pic {
 .list-combo .related-product dt{float:left;margin-left:-105px;width:105px;display:inline;text-align:right;color:#808080}
 .list-combo .related-product dd{float:left;padding:0 18px 0 0}
 .list-combo .related-product dd a{white-space:nowrap}
-/*å¤šå•†å“combo*/
+/*¶àÉÌÆ·combo*/
 .list-combo .product-count {font-size: 14px;}
 .list-combo .product-count em {color: #ff2900;}
 .list-combo .product-count a:hover em {color: #f50;}
-/*product-combo äº§å“combo*/
+/*product-combo ²úÆ·combo*/
 .product-combo {
     border: 1px solid #E5E5E5;
     margin-top: 10px;
@@ -8652,7 +8652,7 @@ ul.p4p-list .pic {
     -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
-/* åˆ—è¡¨è§†å›¾ *//*{{{*/
+/* ÁĞ±íÊÓÍ¼ *//*{{{*/
 .combo-list {
     padding-bottom: 5px;
 }
@@ -8703,7 +8703,7 @@ ul.p4p-list .pic {
     color: #808080;
     margin-top: 16px;
 }/*}}}*/
-/* ç½‘æ ¼è§†å›¾ */
+/* Íø¸ñÊÓÍ¼ */
 .product-combo .combo-grid {
     height: 260px;
     overflow: visible;
@@ -8828,7 +8828,7 @@ ul.p4p-list .pic {
     border-bottom: 1px solid #dfdfdf;
 }
 
-/* ---- å·²å‚ç›´åŒ–äº§å“ç±»ç›®çš„comboæ ·å¼ --- */
+/* ---- ÒÑ´¹Ö±»¯²úÆ·ÀàÄ¿µÄcomboÑùÊ½ --- */
 #vprod-combo {
     position: relative;
     z-index: 2;
@@ -8901,7 +8901,7 @@ ul.p4p-list .pic {
     text-decoration: underline;
 }
 
-/* å¤§å›¾æ¨¡å¼ */
+/* ´óÍ¼Ä£Ê½ */
 #vprod-combo .h-supple {
     background: none;
     text-indent: 0.5em;
@@ -8995,7 +8995,7 @@ ul.p4p-list .pic {
     float: left;
     padding: 6px 0 0 20px;
 }
-/* ä¸Šé¢çš„åŒºå—z-indexå¿…é¡»å¤§ä¸€äº› */
+/* ÉÏÃæµÄÇø¿éz-index±ØĞë´óÒ»Ğ© */
 #J_VProdComboList_1 {
     z-index: 11;
 }
@@ -9019,7 +9019,7 @@ ul.p4p-list .pic {
     background: #363f5b url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFU1lxLjND4JC3JQAAAA9JREFUeNpiYGAEQoAAAwAADAADK26cEwAAAABJRU5ErkJggg==);
 }
 
-/*-------- ç»“æœç»Ÿè®¡çš„å° tip ------*/
+/*-------- ½á¹ûÍ³¼ÆµÄĞ¡ tip ------*/
 a.related-product{
     text-decoration: none;
 }
@@ -9079,7 +9079,7 @@ a.related-product:hover {
 }
 
 
-/*----- product buttons ç»“æ„åˆ—è¡¨å†…â€œåŒæ¬¾æ¯”ä»·â€ --------*/
+/*----- product buttons ½á¹¹ÁĞ±íÄÚ¡°Í¬¿î±È¼Û¡± --------*/
 ul.btn-list li a {
     text-align: left;
     color: #969696;
@@ -9115,7 +9115,7 @@ ul.btn-list li a:hover {
 
 /*=============================================================================
 #   FileName: proper-recommend
-#       Desc: é‡èº«æ¨èæ¨¡å—æ ·å¼æ–‡ä»¶
+#       Desc: Á¿ÉíÍÆ¼öÄ£¿éÑùÊ½ÎÄ¼ş
 #     Author: ada
 #      Email: zhj3618@gmail.com
 #   HomePage: http://www.taobao.com
@@ -9172,7 +9172,7 @@ ul.btn-list li a:hover {
     margin: 10px 0 0 10px;
     font-size: 14px;
 }
-/*æŸ¥çœ‹æ‰€æœ‰é‡èº«æ¨èå®è´*/
+/*²é¿´ËùÓĞÁ¿ÉíÍÆ¼ö±¦±´*/
 .proper-recommend .show-all-box {
     position: relative;
     height: 29px;
@@ -9201,7 +9201,7 @@ ul.btn-list li a:hover {
     font-family :serif;
     font-size: 12px;
 }
-/*é’©å­*/
+/*¹³×Ó*/
 .proper-recommend-trigger {
     position: absolute;
     right: 10px;
@@ -9233,11 +9233,11 @@ ul.btn-list li a:hover {
     background-position: -7px -192px;
 }
 /**
- * å¤§å›¾æ¨¡å¼åˆ—è¡¨é¡µé¢é¼ æ ‡æ‚¬åœæ˜¾ç¤ºskuæµ®å±‚
- * @author  é˜¿å¤§<ada@taobao.com>
+ * ´óÍ¼Ä£Ê½ÁĞ±íÒ³ÃæÊó±êĞüÍ£ÏÔÊ¾sku¸¡²ã
+ * @author  °¢´ó<ada@taobao.com>
  */
 .list-item div.photo:hover,
-/*IE6ç”¨classä½œä¸ºhoveré’©å­*/
+/*IE6ÓÃclass×÷Îªhover¹³×Ó*/
 .list-item div.ie6-sku-hover{
     border-color:#cccccc;
 }
@@ -9260,7 +9260,7 @@ ul.btn-list li a:hover {
 }
  .sku-popup .ks-contentbox {
 }
-/*cssç®­å¤´*/
+/*css¼ıÍ·*/
 .sku-popup .arr {
 	display:none;
 }
@@ -9276,7 +9276,7 @@ ul.btn-list li a:hover {
 .sku-popup .arr span {
     top:-10px;
 }
-/*ç®­å¤´åœ¨å³è¾¹*/
+/*¼ıÍ·ÔÚÓÒ±ß*/
 .sku-popup-right .arr {
     left:-20px;
     border-color: transparent #cccccc transparent transparent;
@@ -9287,7 +9287,7 @@ ul.btn-list li a:hover {
     border-color: transparent #ffffff transparent transparent;
     border-style: dashed solid dashed dashed;
 }
-/*ç®­å¤´åœ¨å·¦è¾¹*/
+/*¼ıÍ·ÔÚ×ó±ß*/
 .sku-popup-left .arr{
     right:-20px;
     border-color: transparent transparent transparent #cccccc;
@@ -9322,10 +9322,10 @@ ul.btn-list li a:hover {
     z-index: 10001;
 }
 /**
- * @fileoverview æ˜æ˜Ÿåº—é“ºShortcutæ”¹é€ 
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview Ã÷ĞÇµêÆÌShortcut¸ÄÔì
+ * @author ÎÄºÓ<wenhe@taobao.com>
  */
-/* Cåº—æ ·å¼ï¼Œä¿æŒå…¼å®¹ {{{ */
+/* CµêÑùÊ½£¬±£³Ö¼æÈİ {{{ */
 .star-shop .mini-mall-icon, .miniarrow {
     background:transparent url(//img03.taobaocdn.com/tps/i3/T1nIXBXj4kXXXXXXXX-29-154.png) no-repeat -9999px -9999px;
 }
@@ -9450,7 +9450,7 @@ ul.btn-list li a:hover {
 
 .star-shop, .star-shop dl, .star-shop-sub{zoom: 1;}
 /* }}} */
-/* å•†åŸ {{{ */
+/* ÉÌ³Ç {{{ */
 .mall-sub-box{
     padding-left:32px;
     margin-top:15px;
@@ -9474,7 +9474,7 @@ ul.btn-list li a:hover {
     padding: 0 10px 0 0;
 }
 
-/* å³è¾¹å°ICON {{{ */
+/* ÓÒ±ßĞ¡ICON {{{ */
 .star-shop-mall .sub-3c-box{
     background:url("//img02.taobaocdn.com/tps/i2/T1kK8KXgdDXXXXXXXX-24-24.png") no-repeat;
 }
@@ -9500,7 +9500,7 @@ ul.btn-list li a:hover {
 }
 /* }}} */
 /* }}} */
-/* Båº— {{{ */
+/* Bµê {{{ */
 .star-shop-b2c {
     border: 1px solid #e39d9f;
     height: 58px;
@@ -9621,7 +9621,7 @@ ul.btn-list li a:hover {
 }
 /* }}} */
 /**
- * @fileoverview æ–°ç‰ˆæ˜æ˜Ÿåº—é“º
+ * @fileoverview ĞÂ°æÃ÷ĞÇµêÆÌ
  */
 .M-absolute {
 }
@@ -9815,9 +9815,9 @@ ul.btn-list li a:hover {
     background:#0163d0}
 .M-bullet-red {
     background:#db0200}
-/* åº—é“ºæ˜Ÿçº§ */
+/* µêÆÌĞÇ¼¶ */
 .rank {
-    /* é‡ç½®æ‰ä¸€äº›æªæ–½ */
+    /* ÖØÖÃµôÒ»Ğ©´ëÊ© */
     padding: 0 !important;
     display:-moz-display-box;
     display:inline-block;
@@ -9915,8 +9915,8 @@ ul.btn-list li a:hover {
     width:85px;
 }
 /**
- * @fileoverview ç”¨æˆ·åé¦ˆ
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview ÓÃ»§·´À¡
+ * @author ÎÄºÓ<wenhe@taobao.com>
  *
  * @license
  * Copyright (c) 2010 Taobao Inc.
@@ -9924,7 +9924,7 @@ ul.btn-list li a:hover {
  */
 
 /**
- * ç”¨æˆ·åé¦ˆ
+ * ÓÃ»§·´À¡
  */
 #advise_side {
     display: block;
@@ -9983,7 +9983,7 @@ ul.btn-list li a:hover {
 #advise_side:hover span s {
     border-bottom-color: #333;
 }
-/* ç”¨æˆ·åé¦ˆ åŒæ  */
+/* ÓÃ»§·´À¡ Ë«À¸ */
 .models {overflow:hidden;margin-top:5px;width:438px;}
 .models dl{float:left;width:200px;padding-left:15px}
 .models dl.firstmodel{border-right:1px solid #ccc;margin-left:-10px;display:inline}
@@ -10132,7 +10132,7 @@ ul.btn-list li a:hover {
     color: #ccc;
 }
 
-/* ç”¨æˆ·åé¦ˆè¡¨å•ï¼Œäº§å“æœ è¿˜åœ¨ç”¨è¿™ä¸ªè€çš„ {{{ */
+/* ÓÃ»§·´À¡±íµ¥£¬²úÆ·ËÑ »¹ÔÚÓÃÕâ¸öÀÏµÄ {{{ */
 .search-popup-window .bd .advise-options {
     max-height: 155px;
     /*_height: 155px;*/
@@ -10173,7 +10173,7 @@ ul.btn-list li a:hover {
 }
 /* }}} */
 /**
- * åä½œå¼Šä¸¾æŠ¥å¼¹å‡ºå±‚
+ * ·´×÷±×¾Ù±¨µ¯³ö²ã
  */
 .antispam-popup .bd {
     height: 370px;
@@ -10353,7 +10353,7 @@ ul.btn-list li a:hover {
 }
 
 /**
- * åä½œå¼Šåˆ—è¡¨å›¾æ ‡
+ * ·´×÷±×ÁĞ±íÍ¼±ê
  */
 .list-view-enlarge div.photo,
 .list-view-enlarge-4pic div.photo {
@@ -10364,7 +10364,7 @@ ul.btn-list li a:hover {
     z-index: 1;
 }
 
-/* å¼¹å‡ºçª—å£çš„æ—¶å€™hoverä¸å†å‡ºç°ï¼Œæ‰€ä»¥ä¸ç”¨:hover */
+/* µ¯³ö´°¿ÚµÄÊ±ºòhover²»ÔÙ³öÏÖ£¬ËùÒÔ²»ÓÃ:hover */
 .list-item div.photo.hover i.antispam {
     display: block;
     position: absolute;
@@ -10438,28 +10438,28 @@ ul.btn-list li a:hover {
     margin: 0 auto;
 }
 
-/* æ—ºæ—ºç‚¹ç¯ */
+/* ÍúÍúµãµÆ */
 /*.ww-light{overflow:hidden;}.ww-block{display:block;margin-top:3px;}.ww-inline{display:inline-block;vertical-align:text-bottom;}.ww-light a{background:url(http://img04.taobaocdn.com/tps/i4/T1UPFAXnNfXXXXXXXX-130-60.gif) no-repeat 0 0;text-decoration:none!important;width:20px;height:20px;zoom:1;}.ww-large a{width:67px;}a.ww-offline{background-position:0 -20px;}a.ww-mobile{background-position:0 -40px;}.ww-small .ww-online{background-position:-80px 0;}.ww-small .ww-offline{background-position:-80px -20px;}.ww-small .ww-mobile{background-position:-80px -40px;}.ww-static .ww-online{background-position:-110px 0;}.ww-static .ww-offline{background-position:-110px -20px;}.ww-static .ww-mobile{background-position:-110px -40px;}.ww-light a span{display:none;}*/
 
-/* æ—ºæ—ºfix */
+/* ÍúÍúfix */
 .ww-large a {
     margin-top: 4px !important;
 }
 
-/* åŒåº—è´­æ‰©å±• */
+/* Í¬µê¹ºÀ©Õ¹ */
 .shop-item .attribute li.shop-info .seller .ww-large a {
     margin-top: 0 !important;
 }
-/* å››å›¾æ¨¡å¼æ ·å¼ */
+/* ËÄÍ¼Ä£Ê½ÑùÊ½ */
 .list-view-enlarge-4pic {
     *zoom: 1;
 }
 .list-view-enlarge-4pic .related-item, .list-view-enlarge-4pic .related-seller,.list-view-enlarge-4pic .related-items,
-/*åˆå¹¶åŒæ¬¾ï¼Œåˆå¹¶å–å®¶*/
+/*ºÏ²¢Í¬¿î£¬ºÏ²¢Âô¼Ò*/
 .list-view-enlarge-4pic .related-item a.view,
 .list-view-enlarge-4pic a.compare,
 .list-view-enlarge-4pic .related-items a.samestyle,
-/*å·¥å…·æ¡*/
+/*¹¤¾ßÌõ*/
 .list-view-enlarge-4pic .related-item, .list-view-enlarge-4pic .related-seller,.list-view-enlarge-4pic .related-items, {
     /* @REPEATX */
     background-image: url(http://img04.taobaocdn.com/tps/i4/T1xRWjXitCXXXXXXXX-260-720.png);
@@ -10475,14 +10475,14 @@ ul.btn-list li a:hover {
     clear: both; 
     visibility: hidden;
 }
-/*çˆ±å¿ƒå®è´ï¼Œå…¨çƒè´­ï¼Œé¦™æ¸¯å•†å®¶ï¼Œæ‹…ä¿äº¤æ˜“ï¼Œå¯„å”®äº¤æ˜“å›¾æ ‡*/
-/*è´§åˆ°ä»˜æ¬¾ï¼Œè‡ªåŠ¨å‘è´§*/
+/*°®ĞÄ±¦±´£¬È«Çò¹º£¬Ïã¸ÛÉÌ¼Ò£¬µ£±£½»Ò×£¬¼ÄÊÛ½»Ò×Í¼±ê*/
+/*»õµ½¸¶¿î£¬×Ô¶¯·¢»õ*/
 .list-view-enlarge-4pic .legend2 a.autoCharge {
     background-position: -226px -304px;
     height: 19px;
     width: 19px;
 }
-/*æ¶ˆä¿å›¾æ ‡*/
+/*Ïû±£Í¼±ê*/
 .list-view-enlarge-4pic .legend2 a.xb-as-fact {
     width: 17px;
 }
@@ -10507,7 +10507,7 @@ background-position: -3px -589px;
 .list-view-enlarge-4pic .legend2 a.xb-quality_item span {
     background-position: -4px -471px;
 }
-/*å¤§å›¾*/
+/*´óÍ¼*/
 .list-view-enlarge-4pic li.list-item {
     position: relative;
     float: left;
@@ -10651,7 +10651,7 @@ background-position: -3px -589px;
     margin: 2px 0 0;
 }
 
-/*æ›´å¤šå›¾æ ‡*/
+/*¸ü¶àÍ¼±ê*/
 .list-view-enlarge-4pic .icon-wrapper {
     z-index: 999;
     background-color: #fff;
@@ -10665,7 +10665,7 @@ background-position: -3px -589px;
     overflow: visible;
     background: #fff;
 }
-/*ä¸‰è§’*/
+/*Èı½Ç*/
 .list-view-enlarge-4pic .icon-wrapper .arrow, .list-view-enlarge-4pic .icon-wrapper .arrow s {
     position: absolute;
     top: -7px;
@@ -10687,7 +10687,7 @@ background-position: -3px -589px;
     border-bottom:7px solid #fff;
 }
 
-/*å¤§å›¾ï¼šåˆå¹¶åŒæ¬¾ï¼Œåˆå¹¶å–å®¶*/
+/*´óÍ¼£ººÏ²¢Í¬¿î£¬ºÏ²¢Âô¼Ò*/
 .list-view-enlarge-4pic .related-items{
     background-image:none;
     background-color:transparent;
@@ -10766,9 +10766,9 @@ background-position: -3px -589px;
     background-position:0 -313px;
 }
 
-/*iconå¿…é€‰æ¢è¡Œæ—¶å€™ï¼Œä¸å¯¹é½*/
+/*icon±ØÑ¡»»ĞĞÊ±ºò£¬²»¶ÔÆë*/
 .list-view-enlarge-4pic .legend2 .icon-wrapper a{
-    /*-- é‡è®¾é«˜åº¦ï¼Œé˜²æ­¢å› ä¸ºé«˜åº¦ä¸ä¸€è‡´å¯¼è‡´æ¢è¡Œé”™è¯¯ --*/
+    /*-- ÖØÉè¸ß¶È£¬·ÀÖ¹ÒòÎª¸ß¶È²»Ò»ÖÂµ¼ÖÂ»»ĞĞ´íÎó --*/
     height: 18px;
     margin-top: 0;
     margin-bottom: 0;
@@ -10789,7 +10789,7 @@ background-position: -3px -589px;
     /*margin-bottom:2px;*/
 /*}*/
 
-/*å®½å±css begin*/
+/*¿íÆÁcss begin*/
 .list-view-enlarge-4pic .partner-seller-price{
     color:#808080;
 }
@@ -10824,7 +10824,7 @@ background-position: -3px -589px;
 .list-view-enlarge-4pic ul.no-saving{
     height:20px;
 }
-/*å®½å±css end*/
+/*¿íÆÁcss end*/
 /*=============================================================================
 #   FileName: z.hate.css
 #       Desc:  
@@ -10895,7 +10895,7 @@ i.hate {
     line-height: 0;
     border-width:8px;
 }
-/*ç®­å¤´åœ¨å³è¾¹*/
+/*¼ıÍ·ÔÚÓÒ±ß*/
 .hate-pop .arr {
     bottom:-17px;
     left:70px;
@@ -10909,8 +10909,8 @@ i.hate {
     border-style: solid dashed dashed dashed;
 }
 /**
- * @fileoverview æ— ç»“æœé‡æŸ¥.
- * @author æ–‡æ²³<wenhe@taobao.com>
+ * @fileoverview ÎŞ½á¹ûÖØ²é.
+ * @author ÎÄºÓ<wenhe@taobao.com>
  *
  * @license
  * Copyright (c) 2010 Taobao Inc.
@@ -10933,7 +10933,7 @@ i.hate {
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-/* ç‰¹å®šåˆ†ç±»ä¸‹æ— ç»“æœ {{{ */
+/* ÌØ¶¨·ÖÀàÏÂÎŞ½á¹û {{{ */
 .cat-noresult{
     padding:10px 0;
     border-bottom:1px solid #E5E5E5
@@ -10983,7 +10983,7 @@ i.hate {
     font-weight:bold;
 }
 /* }}} */
-/*-- keep it gbk ä¸­æ–‡å ä½ --*/
+/*-- keep it gbk ÖĞÎÄÕ¼Î» --*/
 .btn, .sbtn, .bigbtn, .bbtn {
     word-break: keep-all;
     white-space: nowrap;

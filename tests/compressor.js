@@ -65,18 +65,32 @@ function read(name) {
 //run(read('search.css'), 'CSS');
 //run(read('search.source.css'), 'CSS', i);
 
-// loop content
-/*
 var content = read('kissy.js');
 time = +new Date;
+
+// empty steps
+// api performance
+/*
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'JavaScript', []);
+}
+*/
+
+// compress job
+/*
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'JavaScript');
 }
 */
 
-// empty steps
-var content = read('kissy.js');
-time = +new Date;
+// syntaxCheck job
+/*
 for (var i = 0, l = repeat; i < l; i++) {
-  run(content, 'JavaScript', []);
+  run(content, 'JavaScript', [['syntaxChecker', {}]]);
+}
+*/
+
+// nativeascii job
+for (var i = 0, l = repeat; i < l; i++) {
+  run(content, 'JavaScript', [['nativeascii', {}]]);
 }
