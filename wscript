@@ -1,5 +1,5 @@
 # findout how to change default variableName
-blddir='node_modules/RMSNativeUtil'
+blddir='node_modules/rmsNativeUtil'
 srcdir='.'
 
 def set_options(opt):

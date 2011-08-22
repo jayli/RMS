@@ -41,8 +41,6 @@ class RMSNativeUtil: ObjectWrap
 
 };
 
-Persistent<FunctionTemplate> RMSNativeUtil::s_ct;
-
 extern "C" {
   static void init (Handle<Object> target)
   {
