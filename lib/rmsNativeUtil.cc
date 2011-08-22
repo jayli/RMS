@@ -13,67 +13,41 @@ using namespace v8;
 
 class RMSNativeUtil: ObjectWrap
 {
-    private:
-        int m_count;
+  private:
+    int m_count;
 
-    public:
-        static Persistent<FunctionTemplate> s_ct;
-        static void Init(Handle<Object> target)
-        {
-            HandleScope scope;
+  public:
+    static Persistent<FunctionTemplate> s_ct;
+    static void Init(Handle<Object> target)
+    {
+      HandleScope scope;
+      NODE_SET_METHOD(target, "forceGC", ForceGC);
+    }
 
-            /*
-            Local<FunctionTemplate> t = FunctionTemplate::New(New);
+    RMSNativeUtil(): m_count(0)
+    {
+    }
 
-            s_ct = Persistent<FunctionTemplate>::New(t);
-            s_ct->InstanceTemplate()->SetInternalFieldCount(1);
-            s_ct->SetClassName(String::NewSymbol("RMSNativeUtil"));
+    ~RMSNativeUtil()
+    {
+    }
 
-            NODE_SET_PROTOTYPE_METHOD(s_ct, "forceGC", ForceGC);
-
-            target->Set(String::NewSymbol("RMSNativeUtil"),
-                        s_ct->GetFunction());
-            */
-            NODE_SET_METHOD(target, "forceGC", ForceGC);
-
-        }
-
-        RMSNativeUtil() :
-            m_count(0)
-        {
-        }
-
-        ~RMSNativeUtil()
-        {
-        }
-
-        // support for new operator
-        static Handle<Value> New(const Arguments& args)
-        {
-            HandleScope scope;
-            RMSNativeUtil* rnu = new RMSNativeUtil();
-            rnu->Wrap(args.This());
-            return args.This();
-        }
-
-        static Handle<Value> ForceGC(const Arguments& args)
-        {
-            HandleScope scope;
-            // RMSNativeUtil* rnu = ObjectWrap::Unwrap<RMSNativeUtil>(args.This());
-            // rnu->m_count++;
-            V8::LowMemoryNotification();
-            return Undefined();
-        }
+    static Handle<Value> ForceGC(const Arguments& args)
+    {
+      HandleScope scope;
+      V8::LowMemoryNotification();
+      return Undefined();
+    }
 
 };
 
 Persistent<FunctionTemplate> RMSNativeUtil::s_ct;
 
 extern "C" {
-    static void init (Handle<Object> target)
-    {
-        RMSNativeUtil::Init(target);
-    }
+  static void init (Handle<Object> target)
+  {
+    RMSNativeUtil::Init(target);
+  }
 
-    NODE_MODULE(rmsNativeUtil, init);
+  NODE_MODULE(rmsNativeUtil, init);
 }
