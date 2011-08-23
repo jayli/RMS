@@ -1,1 +1,1 @@
-require('./lib/RMS');
+require('./lib/rms');
