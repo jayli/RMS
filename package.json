@@ -1,7 +1,7 @@
 {
   "name": "RMS",
   "description": "Resource Management System",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "authors": ["yyfrankyy@gmail.com (Frank Xu)"],
   "keywords": ["assets", "precompile", "resource management", "assets management"],
   "main": "./index.js",
