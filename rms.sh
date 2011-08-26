@@ -7,6 +7,8 @@
 # @version: 1.0
 # @create: 2011年08月26日 16时13分27秒 CST
 
+rm -rf /tmp/rms.*
+
 logFile=/tmp/rms.log
 errFile=/tmp/rms.err.log
 main=index.js
@@ -30,6 +32,6 @@ case $1 in
         ;;
 
     *)
-        echo " Usage: (start|stop|status|restart)"
+        echo "Usage: ./rms.sh (start|stop|status|restart)"
         ;;
 esac
