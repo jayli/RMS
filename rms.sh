@@ -14,6 +14,9 @@ errFile=/tmp/rms.err.log
 main=index.js
 
 case $1 in
+    init)
+        npm install nativeUtil v8-profiler
+        ;;
 
     start)
         forever start $main #-l $logFile -e $errFile $main
@@ -32,6 +35,6 @@ case $1 in
         ;;
 
     *)
-        echo "Usage: ./rms.sh (start|stop|status|restart)"
+        echo "Usage: ./rms.sh (init|start|stop|status|restart)"
         ;;
 esac
