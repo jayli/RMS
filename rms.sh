@@ -16,7 +16,7 @@ main=index.js
 case $1 in
 
     start)
-        forever start -l $logFile -e $errFile $main
+        forever start $main #-l $logFile -e $errFile $main
         ;;
 
     stop)
