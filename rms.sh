@@ -43,6 +43,11 @@ case $1 in
         forever restart $main
         ;;
 
+    tag)
+        t=`cat package.json | grep version | sed -e 's/  "version": "\([^"]*\)",/\1/'`
+        git tag $t
+        ;;
+
     *)
         echo "Usage: ./rms.sh (init|start|stop|status|restart)"
         ;;
