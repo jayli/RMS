@@ -15,7 +15,7 @@ main=index.js
 
 case $1 in
     init)
-        npm install nativeUtil v8-profiler
+        npm install nativeUtil v8-profiler iconv
         ;;
 
     start)
