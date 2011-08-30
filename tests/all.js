@@ -43,8 +43,11 @@ function run(content, type, steps) {
         console.log('First Response: %s ms', +new Date - eachTime);
         first = false;
       }
-      console.log('Success: %s, %s ms',
-          JSON.parse(code).success, +new Date - eachTime);
+      code = JSON.parse(code);
+      console.log('Success: %s, %s ms', code.success, +new Date - eachTime);
+      if (!code.success) {
+          console.error(code);
+      }
       if (++counter == repeat) {
         console.log('All Done, Total Time %s ms', +new Date - time);
       }
@@ -61,13 +64,16 @@ function read(name) {
   return fs.readFileSync(content).toString();
 }
 
+var content = read('kissy.js');
+
 //run(read('yui.js'), 'JavaScript');
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
-//run(read('search.source.css'), 'CSS', i);
+//run(read('search.source.css'), 'CSS');
 //run(read('kissy.js'), 'JavaScript');
-
-var content = read('kissy.js');
+// run(read('underscore.coffee'),
+//        'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
+run(read('yui.js'), 'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
 time = +new Date;
 
 // empty steps
