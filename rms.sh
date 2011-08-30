@@ -16,7 +16,7 @@ pwd=`pwd`
 
 compile () {
     cd ${pwd}/node_modules/$1/
-    node-waf clean && node-waf configure && node-waf build
+    node-waf configure && node-waf clean && node-waf build
 }
 
 case $1 in
