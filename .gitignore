@@ -5,6 +5,3 @@
 .~*
 .lock-wscript
 npm-debug.log
-node_modules/nativeUtil*
-node_modules/iconv*
-node_modules/v8-profiler*

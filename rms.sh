@@ -12,10 +12,19 @@ rm -rf /tmp/rms.*
 logFile=/tmp/rms.log
 errFile=/tmp/rms.err.log
 main=index.js
+pwd=`pwd`
+
+compile () {
+    cd ${pwd}/node_modules/$1/
+    node-waf clean && node-waf configure && node-waf build
+}
 
 case $1 in
     init)
-        npm install nativeUtil v8-profiler iconv
+        compile nativeUtil
+        compile v8-profiler
+        compile iconv
+        # npm install nativeUtil v8-profiler iconv
         ;;
 
     start)
