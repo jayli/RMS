@@ -1,10 +1,17 @@
 #!/usr/bin/make -f
-
-WAF = node-waf configure; node-waf clean; node-waf build
-COMPILE = cd node_modules/$1/; $(WAF)
-INDEX = lib/rms.js
-TAG = `cat package.json | grep version | sed -e 's/  "version": "\([^"]*\)",/\1/'`
-
+# basic params {{{
+# build an node native extension
+WAF = node-waf configure && node-waf clean && node-waf build
+# cd and compile from native dir.
+COMPILE = $(silent $(shell cd node_modules/$1/ && $(WAF)))
+# get value from package.json by giving key
+PACKAGE = $(shell cat package.json | grep $1 | sed -e 's/  "$1": "\([^"]*\)",/\1/')
+# get version and main file path
+VERSION = $(call PACKAGE,version)
+MAIN = $(call PACKAGE,main)
+# }}}
+# commands {{{
+# default command, clean, and compile all
 all: clean compile-all
 # clean up all build dirs {{{
 clean:
@@ -21,19 +28,20 @@ iconv:
 # }}}
 # controller for application {{{
 start:
-	forever start ${INDEX}
+	forever start ${MAIN}
 stop:
-	forever stop ${INDEX}
+	forever stop ${MAIN}
 restart:
-	forever restart ${INDEX}
+	forever restart ${MAIN}
 status:
-	forever list ${INDEX}
+	forever list ${MAIN}
 # }}}
 # shortcut for git tag {{{
 tag:
-	git tag ${TAG}
+	git tag ${VERSION}
 # }}}
 # deploy commmand {{{
 deploy:
 	# not impl yet
+# }}}
 # }}}
