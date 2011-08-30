@@ -1,7 +1,9 @@
 Resource Management System
 ==========================
 
-Still under development, start `RMS` locally by typing this:
+Still under development, start `RMS` locally by typing this to 
+compile native extensions and start `RMS` at port `8088`:
 
-    ./rms.sh start
+    make
+    make start
 
