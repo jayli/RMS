@@ -22,8 +22,8 @@ function run(content, type, steps) {
   });
 
   var opts = {
-    host: 'trade.ued.taobao.net',
-    port: 8080,
+    host: '127.0.0.1',
+    port: 8088,
     path: '/precompile',
     method: 'POST',
     headers: {
@@ -61,10 +61,11 @@ function read(name) {
   return fs.readFileSync(content).toString();
 }
 
-//run(read('kissy.js'), 'JavaScript');
+//run(read('yui.js'), 'JavaScript');
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
 //run(read('search.source.css'), 'CSS', i);
+//run(read('kissy.js'), 'JavaScript');
 
 var content = read('kissy.js');
 time = +new Date;
@@ -107,6 +108,7 @@ for (var i = 0, l = repeat; i < l; i++) {
 */
 
 // combination with css
+/*
 content = native2ascii(read('search.source.css'));
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'CSS', [
@@ -123,3 +125,4 @@ for (var i = 0, l = repeat; i < l; i++) {
       ['compressor', {}]
   ]);
 }
+*/
