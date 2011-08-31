@@ -4,7 +4,7 @@
   "version": "0.0.5",
   "authors": ["yyfrankyy@gmail.com (Frank Xu)"],
   "keywords": ["assets", "precompile", "resource management", "assets management"],
-  "main": "./lib/rms.js",
+  "main": "lib/rms.js",
   "engines": {
     "node": ">= 0.4.10"
   },
