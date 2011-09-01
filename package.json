@@ -9,14 +9,15 @@
     "node": ">= 0.4.10"
   },
   "dependencies": {
-    "clean-css": ">= 0.2.4",
     "coffee-script": ">= 1.1.2",
     "less": ">= 1.1.4",
+    "uglify-js": ">= 1.0.6",
+    "clean-css": ">= 0.2.4",
+    "native2ascii": ">= 0.0.1",
     "iconv": ">= 1.1.2",
     "eyes": ">= 0.1.6",
-    "native2ascii": ">= 0.0.1",
+    "underscore": ">= 1.1.7",
     "nativeUtil": ">= 0.0.1",
-    "uglify-js": ">= 1.0.6",
     "node-uuid": ">= 1.2.0",
     "webservice": ">= 0.5.1",
     "webworker": ">= 0.8.4",

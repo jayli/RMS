@@ -9,6 +9,7 @@ PACKAGE = $(shell cat package.json | grep $1 | sed -e 's/  "$1": "\([^"]*\)",/\1
 # get version and main file path
 VERSION = $(call PACKAGE,version)
 MAIN = $(call PACKAGE,main)
+LOG = $(shell make status | grep data | sed -e "1 d" | awk '{print $$8}' | cut -c "6-34")
 # }}}
 # commands {{{
 # default command, clean, and compile all
@@ -35,6 +36,8 @@ restart:
 	forever restart ${MAIN}
 status:
 	forever list ${MAIN}
+viewlog:
+	tail -f ${LOG}
 # }}}
 # shortcut for git tag {{{
 tag:
