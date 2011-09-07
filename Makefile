@@ -28,6 +28,11 @@ iconv:
 	$(call COMPILE,iconv)
 # }}}
 # controller for application {{{
+debug:
+	make stop
+	make start
+	sleep 1
+	make viewlog
 start:
 	forever start ${MAIN}
 stop:
