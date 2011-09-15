@@ -10,9 +10,8 @@ var util = require('util');
 var time = +new Date;
 var counter = 0;
 var repeat = +process.argv[2] || 5;
-var first = true;
 
-function run(content, type, steps) {
+function run(content, type, steps, printResult) {
   var postData = querystring.stringify({
     content: native2ascii(content),
     config: JSON.stringify({
@@ -39,15 +38,14 @@ function run(content, type, steps) {
     res.on('data', function(chunk) {
       code += chunk.toString();
     }).on('end', function(chunk) {
-      if (first) {
-        console.log('First Response: %s ms', +new Date - eachTime);
-        first = false;
-      }
       code = JSON.parse(code);
-      console.log('Success: %s, %s ms', code.success, +new Date - eachTime);
+      console.log('Response: %s, %s ms, (%s => %s)',
+          code.success, +new Date - eachTime,
+          content.length, code.result.length);
       if (!code.success) {
-          console.error(code);
+        console.error(code.message);
       }
+      code.success && printResult && console.log(code.result);
       if (++counter == repeat) {
         console.log('All Done, Total Time %s ms', +new Date - time);
       }
@@ -59,22 +57,24 @@ function run(content, type, steps) {
 }
 
 
+var content = '';
 function read(name) {
   var content = path.join(__dirname, 'data', name);
   return fs.readFileSync(content).toString();
 }
 
-var content = read('kissy.js');
-
 //run(read('yui.js'), 'JavaScript');
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
-//run(read('search.source.css'), 'CSS');
-//run(read('kissy.js'), 'JavaScript');
-// run(read('underscore.coffee'),
-//        'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
-run(read('yui.js'), 'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
 time = +new Date;
+run(read('search.source.css'), 'CSS');
+run(read('kissy.js'), 'JavaScript');
+run(read('underscore.coffee'),
+        'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
+run(read('bootstrap.less'),
+        'CSS', [['less', {}], ['compressor', {}]]);
+// run(read('yui.js'),
+//        'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
 
 // empty steps
 // api performance
