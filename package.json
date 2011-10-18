@@ -1,7 +1,7 @@
 {
   "name": "RMS",
   "description": "Resource Management System",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "authors": ["yyfrankyy@gmail.com (Frank Xu)"],
   "keywords": ["assets", "precompile", "resource management", "assets management"],
   "main": "lib/rms.js",
@@ -21,6 +21,10 @@
     "node-uuid": ">= 1.2.0",
     "webservice": ">= 0.5.1",
     "webworker": ">= 0.8.4",
-    "v8-profiler": ">= 0.0.3"
+    "v8-profiler": ">= 0.0.3",
+    "vows": ""
+  },
+  "scripts": {
+    "test": "vows"
   }
 }

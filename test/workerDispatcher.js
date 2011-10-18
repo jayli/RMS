@@ -19,7 +19,6 @@ w1.on('message', function(data) {
 w1.dispatch();
 
 // timeout
-/*
 rmsConfig.workerTimeout = 10;
 var w2 = new Worker('aa', {
   type: 'string',
@@ -33,4 +32,3 @@ w2.on('message', function(data) {
   w2.worker.terminate();
 });
 w2.dispatch();
-*/
