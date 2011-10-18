@@ -1,15 +1,23 @@
 // vim: set sw=2 ts=2:
 
-var aw = require('../lib/asyncWorkflow'),
-    assert = require('assert');
+var vows = require('vows');
+var assert = require('assert');
+var aw = require('../lib/asyncWorkflow');
 
-var wf;
-
-assert.throws(function() {
-  wf = new aw('aa', {
-    type: 'string',
-    steps: [
-      ['eascii', {}]
-    ]
-  });
-}, aw.JOB_NOT_SUPPORTED);
+vows.describe('asyncWorkflow').addBatch({
+  'async exception': {
+    topic: function() {
+      this.callback();
+    },
+    'throw exception': function() {
+      assert.throws(function() {
+        new aw('aa', {
+          type: 'string',
+          steps: [
+            ['eascii', {}]
+          ]
+        });
+      }, aw.JOB_NOT_SUPPORTED);
+    }
+  }
+}).export(module, {error: false});

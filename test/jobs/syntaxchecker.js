@@ -1,13 +1,9 @@
 // vim: set sw=2 ts=2:
 
-var vows = require('vows');
 var assert = require('assert');
-var syntaxChecker = require('../lib/jobs/syntaxChecker');
-
-var suite = vows.describe('jobs/syntaxChecker');
-
-suite.addBatch({
-  'js-success': {
+var syntaxChecker = require('../../lib/jobs/syntaxChecker');
+exports.suite = {
+  'js-syntaxchecker-success': {
     topic: function() {
       var str = 'var yourname = 1;';
       var sc = new syntaxChecker({type: 'JavaScript'});
@@ -20,7 +16,7 @@ suite.addBatch({
       assert.equal(str, content);
     }
   },
-  'js-failed': {
+  'js-syntaxchecker-failed': {
     topic: function() {
       var str = 'var yourname =;';
       var sc = new syntaxChecker({type: 'JavaScript'});
@@ -30,10 +26,7 @@ suite.addBatch({
       });
     },
     'should success': function(str, content) {
-      console.log(content);
       assert.notEqual(str, content);
     }
   }
-});
-
-suite.export(module, {error: false});
+}
