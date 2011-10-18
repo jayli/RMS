@@ -28,6 +28,6 @@
     "api-easy": ""
   },
   "scripts": {
-    "test": "vows"
+    "test": "vows test/*.js --spec"
   }
 }

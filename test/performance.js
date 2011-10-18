@@ -67,12 +67,14 @@ function read(name) {
 //run(read('kissy-min.js'), 'JavaScript');
 //run(read('search.css'), 'CSS');
 time = +new Date;
+/*
 run(read('search.source.css'), 'CSS');
 run(read('kissy.js'), 'JavaScript');
 run(read('underscore.coffee'),
         'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
 run(read('bootstrap.less'),
         'CSS', [['less', {}], ['compressor', {}]]);
+        */
 // run(read('yui.js'),
 //        'JavaScript', [['coffeescript', {}], ['compressor', {}]]);
 
