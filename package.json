@@ -21,8 +21,11 @@
     "node-uuid": ">= 1.2.0",
     "webservice": ">= 0.5.1",
     "webworker": ">= 0.8.4",
-    "v8-profiler": ">= 0.0.3",
-    "vows": ""
+    "v8-profiler": ">= 0.0.3"
+  },
+  "devDependencies": {
+    "vows": "",
+    "api-easy": ""
   },
   "scripts": {
     "test": "vows"
