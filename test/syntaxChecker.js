@@ -7,7 +7,7 @@ var syntaxChecker = require('../lib/jobs/syntaxChecker');
 var suite = vows.describe('jobs/syntaxChecker');
 
 suite.addBatch({
-  'success': {
+  'js-success': {
     topic: function() {
       var str = 'var yourname = 1;';
       var sc = new syntaxChecker({type: 'JavaScript'});
@@ -20,7 +20,7 @@ suite.addBatch({
       assert.equal(str, content);
     }
   },
-  'failed': {
+  'js-failed': {
     topic: function() {
       var str = 'var yourname =;';
       var sc = new syntaxChecker({type: 'JavaScript'});
@@ -30,6 +30,7 @@ suite.addBatch({
       });
     },
     'should success': function(str, content) {
+      console.log(content);
       assert.notEqual(str, content);
     }
   }
