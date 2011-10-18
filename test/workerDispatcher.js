@@ -7,7 +7,9 @@ var assert = require('assert');
 var Worker = require('../lib/workerDispatcher');
 var rmsConfig = require('../lib/rmsConfig');
 
-vows.describe('worker dispatcher').addBatch({
+var suite = vows.describe('dispatcher');
+
+suite.addBatch({
   'empty steps': {
     topic: function() {
       var self = this;
@@ -45,4 +47,6 @@ vows.describe('worker dispatcher').addBatch({
       w2.worker.terminate();
     }
   }
-}).export(module, {error: false});
+});
+
+suite.export(module, {error: false});
