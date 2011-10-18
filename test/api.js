@@ -24,6 +24,24 @@ suite.next().post('/precompile', {
   .expect('should compress css', function(err, res, body) {
     body = JSON.parse(body);
     assert.ok(body.success);
+    assert.equal('#id{color:#fff}', body.result);
+  });
+
+suite.next().post('/precompile', {
+    content: '#id{width: 10px + 20px}',
+    config: JSON.stringify({
+      type: 'CSS',
+      steps: [
+        ['less', {}],
+        ['compressor', {}]
+      ]
+    })
+  })
+  .expect(200)
+  .expect('should compile less and compress css', function(err, res, body) {
+    body = JSON.parse(body);
+    assert.ok(body.success);
+    assert.equal('#id{width:30px}', body.result);
   });
 
 suite.next().post('/precompile', {
@@ -41,5 +59,23 @@ suite.next().post('/precompile', {
     assert.ok(body.success);
     assert.equal('(function(a){})(KISSY)', body.result);
   });
+
+suite.next().post('/precompile', {
+    content: 'alert "Hello,World!"',
+    config: JSON.stringify({
+      type: 'JavaScript',
+      steps: [
+        ['coffeescript', {}],
+        ['compressor', {}]
+      ]
+    })
+  })
+  .expect(200)
+  .expect('should compile coffeescript and compress javascript',
+    function(err, res, body) {
+      body = JSON.parse(body);
+      assert.ok(body.success);
+      assert.equal('(function(){alert("Hello,World!")}).call(this)', body.result);
+    });
 
 suite.export(module);
