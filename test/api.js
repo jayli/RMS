@@ -11,7 +11,7 @@ require('../lib/rms');
 var suite = APIeasy.describe('API Test');
 
 suite.use('localhost', 8088)
-  .setHeader('Content-Type', 'application/json');
+  .setHeader('Content-Type', 'application/json; charset=GBK');
 
 suite.next().post('/precompile', {
     content: '#id{color: #ffffff}',
@@ -83,7 +83,7 @@ suite.next().post('/precompile', {
 
 suite.next().post('/precompile', {
     content: fs.readFileSync(fs.realpathSync('./test/data/gbk.js')).toString(),
-    config: JSON.stringify({
+      config: JSON.stringify({
       type: 'JavaScript',
       steps: [
         ['nativeascii', {}],
@@ -94,9 +94,10 @@ suite.next().post('/precompile', {
   .expect(200)
   .expect('should compile with chinese character',
     function(err, res, body) {
+      console.log(body);
       body = JSON.parse(body);
       assert.ok(body.success);
-      assert.equal('var str="\\u4e2d\\u6587"', body.result);
+      assert.equal('var str="gbk"', body.result);
     });
 
 suite.export(module);

@@ -32,7 +32,7 @@ exports.suite = {
       na.run(str, this.callback);
     },
     'should success': function(content) {
-      assert.equal('\\u4e2d\\u6587', content.toLowerCase());
+      assert.equal('var str = \'\\u4e2d\\u6587\';\n', content.toLowerCase());
     }
   }
 };
