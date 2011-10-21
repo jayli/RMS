@@ -2,6 +2,8 @@
 
 var assert = require('assert');
 var APIeasy = require('api-easy');
+var fs = require('fs');
+var path = require('path');
 
 // start rms at 8088
 require('../lib/rms');
@@ -75,7 +77,26 @@ suite.next().post('/precompile', {
     function(err, res, body) {
       body = JSON.parse(body);
       assert.ok(body.success);
-      assert.equal('(function(){alert("Hello,World!")}).call(this)', body.result);
+      assert.equal(
+        '(function(){alert("Hello,World!")}).call(this)', body.result);
+    });
+
+suite.next().post('/precompile', {
+    content: fs.readFileSync(fs.realpathSync('./test/data/gbk.js')).toString(),
+    config: JSON.stringify({
+      type: 'JavaScript',
+      steps: [
+        ['nativeascii', {}],
+        ['compressor', {}]
+      ]
+    })
+  })
+  .expect(200)
+  .expect('should compile with chinese character',
+    function(err, res, body) {
+      body = JSON.parse(body);
+      assert.ok(body.success);
+      assert.equal('var str="\\u4e2d\\u6587"', body.result);
     });
 
 suite.export(module);
