@@ -1,1 +1,1 @@
-var str = 'ÖĞÎÄ';
+var str = '\u4e2d\u6587';
