@@ -30,7 +30,7 @@ suite.addBatch({
   },
   'timeout': {
     topic: function() {
-      rmsConfig.workerTimeout = 10;
+      rmsConfig.workerTimeout = 1;
       var self = this;
       var w2 = new Worker('aa', {
         type: 'string',

@@ -59,7 +59,7 @@ suite.next().post('/precompile', {
   .expect('should compress javascript', function(err, res, body) {
     body = JSON.parse(body);
     assert.ok(body.success);
-    assert.equal('(function(a){})(KISSY)', body.result);
+    assert.equal('(function(a){})(KISSY);', body.result);
   });
 
 suite.next().post('/precompile', {
@@ -78,7 +78,7 @@ suite.next().post('/precompile', {
       body = JSON.parse(body);
       assert.ok(body.success);
       assert.equal(
-        '(function(){alert("Hello,World!")}).call(this)', body.result);
+        '(function(){alert("Hello,World!")}).call(this);', body.result);
     });
 
 suite.next().post('/precompile', {
@@ -96,7 +96,7 @@ suite.next().post('/precompile', {
     function(err, res, body) {
       body = JSON.parse(body);
       assert.ok(body.success);
-      assert.equal('var str="\\u4e2d\\u6587"', body.result);
+      assert.equal('var str="\\u4e2d\\u6587";', body.result);
     });
 
 suite.export(module);

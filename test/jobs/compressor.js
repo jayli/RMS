@@ -11,7 +11,7 @@ exports.suite = {
       cps.run(str, this.callback);
     },
     'should success': function(content) {
-      assert.equal(23, content.length);
+      assert.equal('(function(a){})(KISSY);', content);
     }
   },
   'compress css': {
