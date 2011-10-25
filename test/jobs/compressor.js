@@ -11,7 +11,7 @@ exports.suite = {
       cps.run(str, this.callback);
     },
     'should success': function(content) {
-      assert.equal(22, content.length);
+      assert.equal(23, content.length);
     }
   },
   'compress css': {
@@ -33,7 +33,7 @@ exports.suite = {
       cps.run(str, this.callback);
     },
     'should success': function(content) {
-      assert.equal('var str="中文"', content);
+      assert.equal('var str="中文";', content);
     }
   }
 };
