@@ -80,11 +80,10 @@ run(read('bootstrap.less'),
 
 // empty steps
 // api performance
-/*
+content = read('kissy-min.js');
 for (var i = 0, l = repeat; i < l; i++) {
   run(content, 'JavaScript', []);
 }
-*/
 
 // compress job
 /*
