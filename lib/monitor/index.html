@@ -77,7 +77,7 @@
 
                 socket.on('data', function (data) {
                     var series = memory.series[0];
-                    var shift = series.data.length > 20;
+                    var shift = series.data.length > 50;
 
                     var memoryData = data.slice(0, 4);
                     memoryData.forEach(function(m, idx) {
