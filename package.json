@@ -21,6 +21,8 @@
     "node-uuid": ">= 1.2.0",
     "webservice": ">= 0.5.1",
     "webworker": ">= 0.8.4",
+    "express": ">= 2.5.0",
+    "socket.io": ">= 0.8.5",
     "v8-profiler": ">= 0.0.3"
   },
   "devDependencies": {

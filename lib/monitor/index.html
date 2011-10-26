@@ -72,7 +72,6 @@
                 });
 
                 function addPoint(chart, data, point, shift) {
-                    console.log(chart.series, point);
                     chart.series[point-1].addPoint([+data[0], +data[point]], true, shift);
                 }
 
