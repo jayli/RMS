@@ -8,13 +8,16 @@
         <script>
             var socket = io.connect('http://trade.ued.taobao.net:8089');
             $(document).ready(function() {
-                var chart = new Highcharts.Chart({
+                var memory = new Highcharts.Chart({
                     chart: {
-                        renderTo: 'container',
+                        renderTo: 'memory',
                         defaultSeriesType: 'spline'
                     },
                     title: {
-                        text: 'RMS Monitor'
+                        text: 'memory'
+                    },
+                    xAxis: {
+                        type: 'datetime'
                     },
                     series: [{
                         name: 'rss',
@@ -31,25 +34,88 @@
                     }]
                 });
 
-                function addPoint(data, point, shift) {
-                    chart.series[point-1].addPoint([+data[0], +data[point]/1048576], true, shift);
+                var loadavg = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'loadavg',
+                        defaultSeriesType: 'spline'
+                    },
+                    title: {
+                        text: 'loadavg'
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+                    series: [{
+                        name: '1min',
+                        data: []
+                    }, {
+                        name: '5min',
+                        data: []
+                    }, {
+                        name: '15min',
+                        data: []
+                    }]
+                });
+
+                var cpus = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'cpus',
+                        defaultSeriesType: 'spline'
+                    },
+                    title: {
+                        text: 'cpus'
+                    },
+                    xAxis: {
+                        type: 'datetime'
+                    },
+                    series: []
+                });
+
+                function addPoint(chart, data, point, shift) {
+                    console.log(chart.series, point);
+                    chart.series[point-1].addPoint([+data[0], +data[point]], true, shift);
                 }
 
                 socket.on('data', function (data) {
-                    console.log(data);
-                    var series = chart.series[0];
+                    var series = memory.series[0];
                     var shift = series.data.length > 20;
-                    addPoint(data, 1, shift);
-                    addPoint(data, 2, shift);
-                    addPoint(data, 3, shift);
-                    addPoint(data, 4, shift);
+
+                    var memoryData = data.slice(0, 4);
+                    memoryData.forEach(function(m, idx) {
+                        if (idx == 0) return;
+                        addPoint(memory, memoryData, idx, shift);
+                    });
+
+                    var loadavgData = [data[0]].concat(data.slice(5, 8));
+                    loadavgData.forEach(function(m, idx) {
+                        if (idx == 0) return;
+                        addPoint(loadavg, loadavgData, idx, shift);
+                    });
+
+                    var cpusData = [data[0]].concat(data.slice(8, data.length));
+                    if (cpus.series.length == 0) {
+                        cpusData.forEach(function(cpu, idx) {
+                            if (idx == 0) return;
+                            cpus.addSeries({
+                                name: 'cpu' + idx,
+                                data: []
+                            });
+                        });
+                    }
+                    cpusData.forEach(function(cpu, idx) {
+                        if (idx == 0) return;
+                        addPoint(cpus, cpusData, idx, shift);
+                    });
                 });
             });
         </script>
     </head>
 
     <body>
-        <div id="container" style="width: 800px; height: 400px;"></div>
+        <style>.chart{width:100%;height:50%;margin-top:20px;}</style>
+        <div id="loadavg" class="chart"></div>
+        <div id="memory" class="chart"></div>
+        <div id="cpus" class="chart"></div>
     </body>
 </html>
 
