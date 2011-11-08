@@ -16,7 +16,7 @@
             <li><a href="#image">Image</a></li> 
             <li class="user"><a href="#user">wenhe</a></li>
           </ul> 
-          <ul class="user"> 
+          <ul class="nav user"> 
             <li><a href="#user">wenhe</a></li>
           </ul> 
         </div> 
@@ -24,20 +24,54 @@
     </div>
 
     <div class="container">
-      <div class="app-title">
+
+      <div class="app-title page-header">
         <h2>Assets / detail</h2>
         <a href="#config" class="btn log">查看日志</a>
       </div>
-    <pre>&lt;div class="fill"&gt;
-  &lt;div class="container"&gt; 
-    &lt;a class="brand" href="#"&gt;RMS&lt;sup&gt;dev&lt;/sup&gt;&lt;/a&gt; 
-    &lt;ul class="nav"&gt; 
-      &lt;li class="active"&gt;&lt;a href="#"&gt;Assets&lt;/a&gt;&lt;/li&gt; 
-      &lt;li&gt;&lt;a href="#php"&gt;PHP&lt;/a&gt;&lt;/li&gt; 
-      &lt;li&gt;&lt;a href="#image"&gt;Image&lt;/a&gt;&lt;/li&gt; 
-    &lt;/ul&gt; 
-  &lt;/div&gt; 
-&lt;/div&gt;</pre>
+
+      <div class="app-oper">
+        <a class="btn primary" href="/pub/pre">预发布</a>
+        <a class="btn" href="/pub/beta">Beta发布</a>
+        <a class="btn" href="/pub/formal">正式</a>
+      </div>
+
+      <div class="app-list">
+        <h3>
+          <a href="#detail">detail</a> /
+          <a href="#">lib</a> /
+        </h3>
+        <table class="zebra-striped">
+          <thead>
+            <tr>
+                <th class="choose">选中</th>
+                <th class="filename">文件名</th>
+                <th class="version">最新版本号</th>
+                <th class="version">发布版本号</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#list}}
+            <tr>
+                <td>#</td>
+                <td><a href="base.js">base.js</a></td>
+                <td>12345</td>
+                <td>12344</td>
+            </tr>
+            {{/list}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="app-oper">
+        <a class="btn primary" href="/pub/pre">预发布</a>
+        <a class="btn" href="/pub/beta">Beta发布</a>
+        <a class="btn" href="/pub/formal">正式</a>
+      </div>
+
+      <footer>
+      RMS<sup>dev</sup> 2011-2012
+      </footer>
     </div>
   <script src="http://a.tbcdn.cn/libs/seajs/1.0.2/sea.js" data-main="./assets/init"></script>
   </body>

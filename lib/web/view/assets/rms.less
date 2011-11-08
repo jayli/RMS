@@ -14,7 +14,7 @@
 
 body {
   font-family : "themixsemilight-plain";
-  padding-top: 40px;
+  padding-top: 50px;
   display: block !important;
 }
 
@@ -27,12 +27,22 @@ pre code {
   background: none;
 }
 
-.topbar .user {
-  float: right;
+.topbar {
+  .nav {
+    font-size: 15px;
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+  .user {
+    float: right;
+  }
 }
 
 .app-title {
-  padding: 20px 0;
+  padding: 10px 0;
 
   .clearfix;
 
@@ -43,4 +53,26 @@ pre code {
   .btn {
     float: right;
   }
+}
+
+.app-oper {
+  padding: 10px 0;
+
+  .btn {
+    margin-right: 10px;
+  }
+}
+
+.app-list {
+  .choose {
+    width: 50px;
+  }
+  .version {
+    width: 100px;
+  }
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
 }
