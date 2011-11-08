@@ -6,7 +6,10 @@ var fs = require('fs');
 var path = require('path');
 
 var file = process.argv[2];
-console.log(file);
+if (!file) {
+  console.log('Usage: node test/file.js yourfile.js');
+  return;
+}
 
 // start rms at 8088
 require('../lib/rms');
