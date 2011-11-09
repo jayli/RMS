@@ -1,7 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>RMS</title>
+    <link href="/assets/rms.less" rel="stylesheet/less"/>
+    <link rel="shortcut icon" href="http://a.tbcdn.cn/app/tms/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <div class="topbar"> 
       <div class="fill"> 
         <div class="container"> 
-          <a class="brand" href="#">RMS<sup>dev</sup></a> 
+          <a class="brand" href="/">RMS<sup>dev</sup></a> 
           <ul class="nav"> 
           {{#apps}}
             <li{{#active}} class="active"{{/active}}><a href="/{{href}}">{{name}}</a></li> 
@@ -21,3 +30,4 @@
         </div> 
       </div> 
     </div>
+    <div class="container">

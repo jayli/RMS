@@ -1,19 +1,10 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf8" />
-    <title>RMS</title>
-    <link href="/assets/rms.less" rel="stylesheet/less"/>
-    <link rel="shortcut icon" href="http://a.tbcdn.cn/app/tms/favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-      {{> topbar}}
-
-    <div class="container">
-
+    {{> header}}
       <div class="app-title page-header">
-        <h2>Assets / detail</h2>
-        <a href="#config" class="btn log">查看日志</a>
+        <h2>
+          <a href="/{{apptype-href}}">{{apptype-name}}</a> / 
+          <a href="/{{apptype-href}}/{{app-href}}">{{app-name}}</a>
+        </h2>
+        <a href="/{{apptype-href}}/{{app-href}}/{{log}}" class="btn log">查看日志</a>
       </div>
 
       <div class="app-oper">
@@ -55,11 +46,4 @@
         <a class="btn" href="/pub/formal">正式</a>
       </div>
 
-      <footer>
-      RMS<sup>dev</sup> 2011-2012
-      </footer>
-    </div>
-  <script src="http://a.tbcdn.cn/libs/seajs/1.0.2/sea.js" data-main="/assets/init"></script>
-  </body>
-</html>
-
+      {{> footer}}

@@ -12,6 +12,11 @@
   src: url('Inconsolata.woff');
 }
 
+.mono(@fontSize: 14px) {
+  font-family: "Inconsolata";
+  font-size: @fontSize;
+}
+
 body {
   font-family : "themixsemilight-plain";
   padding-top: 50px;
@@ -19,8 +24,7 @@ body {
 }
 
 code, pre {
-  font-family: "Inconsolata";
-  font-size: 14px;
+  .mono;
 }
 
 pre code {
@@ -84,4 +88,8 @@ pre code {
 footer {
   padding: 20px;
   text-align: center;
+}
+
+.error-page {
+  .mono(16px);
 }
