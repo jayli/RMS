@@ -1,9 +1,12 @@
       <div class="app-list">
         <h3>
-          <a href="/{{apptype-href}}/{{app-href}}">{{app-name}}</a> /
+        <ul class="breadcrumb">
+          <li><a href="/{{apptype-href}}/{{app-href}}">{{app-name}}</a> <span class="divider">/</span>
           {{#pathes}}
-          <a href="/{{apptype-href}}/{{app-href}}/{{folderpath}}">{{foldername}}</a> /
+          <li><a href="/{{apptype-href}}/{{app-href}}/{{folderpath}}">{{foldername}}</a> <span class="divider">/</span></li>
           {{/pathes}}
+          {{#app-filename}}<li class="active">{{app-filename}}</li>{{/app-filename}}
+        </ul>
         </h3>
         <table class="zebra-striped">
           <thead>

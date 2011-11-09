@@ -1,7 +1,10 @@
 <div class="app-list">
 <ul>
 {{#list}}
-  <li><a href="/{{apptype-href}}/{{app-href}}">{{app-name}}</a></li>
+  <li>
+    <h4><a href="/{{apptype-href}}/{{app-name}}">{{app-name}}</a><span class="label">{{app-version}}</span></h4>
+    <p><a href="{{app-svnroot}}" target="_blank">{{app-svnroot}}</a></p>
+  </li>
 {{/list}}
 </ul>
 </div>

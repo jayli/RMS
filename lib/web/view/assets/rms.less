@@ -17,6 +17,11 @@
   font-size: @fontSize;
 }
 
+.normal(@fontSize: 12px) {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: @fontSize;
+}
+
 body {
   font-family : "themixsemilight-plain";
   padding-top: 50px;
@@ -32,7 +37,7 @@ pre code {
 }
 
 .btn {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .normal;
 }
 
 .topbar {
@@ -92,4 +97,9 @@ footer {
 
 .error-page {
   .mono(16px);
+}
+
+.label {
+  .normal(10px);
+  margin-left: 10px;
 }
