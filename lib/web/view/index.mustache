@@ -4,24 +4,10 @@
     <meta charset="utf8" />
     <title>RMS</title>
     <link href="/assets/rms.less" rel="stylesheet/less"/>
+    <link rel="shortcut icon" href="http://a.tbcdn.cn/app/tms/favicon.ico" type="image/x-icon" />
   </head>
-  <body style="display: none">
-    <div class="topbar"> 
-      <div class="fill"> 
-        <div class="container"> 
-          <a class="brand" href="#">RMS<sup>dev</sup></a> 
-          <ul class="nav"> 
-            <li class="active"><a href="#">Assets</a></li> 
-            <li><a href="#php">PHP</a></li> 
-            <li><a href="#image">Image</a></li> 
-            <li class="user"><a href="#user">wenhe</a></li>
-          </ul> 
-          <ul class="nav user"> 
-            <li><a href="#user">wenhe</a></li>
-          </ul> 
-        </div> 
-      </div> 
-    </div>
+  <body>
+      {{> topbar}}
 
     <div class="container">
 
@@ -73,7 +59,7 @@
       RMS<sup>dev</sup> 2011-2012
       </footer>
     </div>
-  <script src="http://a.tbcdn.cn/libs/seajs/1.0.2/sea.js" data-main="./assets/init"></script>
+  <script src="http://a.tbcdn.cn/libs/seajs/1.0.2/sea.js" data-main="/assets/init"></script>
   </body>
 </html>
 

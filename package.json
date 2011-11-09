@@ -13,7 +13,7 @@
     "less": ">= 1.1.4",
     "uglify-js": ">= 1.1.1",
     "clean-css": ">= 0.2.4",
-    "native2ascii": ">= 0.0.1",
+    "native2ascii": ">= 0.0.2",
     "iconv": ">= 1.1.2",
     "eyes": ">= 0.1.6",
     "underscore": ">= 1.1.7",
