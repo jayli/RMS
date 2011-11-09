@@ -1,0 +1,34 @@
+      <div class="app-list">
+        <h3>
+          <a href="/{{apptype-href}}/{{app-href}}">{{app-name}}</a> /
+          {{#pathes}}
+          <a href="/{{apptype-href}}/{{app-href}}/{{folderpath}}">{{foldername}}</a> /
+          {{/pathes}}
+        </h3>
+        <table class="zebra-striped">
+          <thead>
+            <tr>
+                <th class="choose">选中</th>
+                <th class="filename">文件名</th>
+                <th class="version">最新版本号</th>
+                <th class="version">发布版本号</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#files}}
+            <tr>
+                <td>#</td>
+                <td><a href="/{{apptype-href}}/{{app-href}}/{{filepath}}">{{filename}}</a></td>
+                <td>{{newest-version}}</td>
+                <td>{{last-version}}</td>
+            </tr>
+            {{/files}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="app-oper">
+        <a class="btn primary" href="/pub/pre">预发布</a>
+        <a class="btn" href="/pub/beta">Beta发布</a>
+        <a class="btn" href="/pub/formal">正式</a>
+      </div>
