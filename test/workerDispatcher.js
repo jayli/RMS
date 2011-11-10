@@ -1,8 +1,6 @@
 // vim: set sw=2 ts=2:
 
 var vows = require('vows');
-
-var util = require('util');
 var assert = require('assert');
 var Worker = require('../lib/workerDispatcher');
 var rmsConfig = require('../lib/rmsConfig');
@@ -18,33 +16,33 @@ suite.addBatch({
         steps: []
       });
       w1.on('message', function(data) {
-        self.callback(w1, data);
+        self.callback(data);
       });
       w1.dispatch();
     },
-    'should success': function(w1, data) {
+    'should success': function(data) {
       assert.equal('aa', data.result);
       assert.ok(data.success);
-      w1.worker.terminate();
     }
   },
   'timeout': {
     topic: function() {
-      rmsConfig.workerTimeout = 1;
+      rmsConfig.workerTimeout = 10;
       var self = this;
       var w2 = new Worker('aa', {
-        type: 'string',
-        steps: []
+        type: 'JavaScript',
+        steps: [
+          ['compressor', {}]
+        ]
       });
       w2.on('message', function(data) {
-        self.callback(w2, data);
+        self.callback(data);
       });
       w2.dispatch();
     },
-    'should timeout': function(w2, data) {
+    'should timeout': function(data) {
       assert.equal('aa', data.result);
       assert.ok(!data.success);
-      w2.worker.terminate();
     }
   }
 });

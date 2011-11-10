@@ -5,9 +5,6 @@ var APIeasy = require('api-easy');
 var fs = require('fs');
 var path = require('path');
 
-// start rms at 8088
-require('../lib/rms');
-
 var suite = APIeasy.describe('API Test');
 
 suite.use('localhost', 8088)

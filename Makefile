@@ -10,6 +10,7 @@ PACKAGE = $(shell cat package.json | grep $1 | sed -e 's/  "$1": "\([^"]*\)",/\1
 VERSION = $(call PACKAGE,version)
 MAIN = $(call PACKAGE,main)
 LOG = $(shell make status | grep data | sed -e "1 d" | awk '{print $$8}' | cut -c "6-34")
+CONFIG = $(shell export NODE_PATH=$$NODE_PATH:`pwd`/node_modules/less/lib)
 # }}}
 # commands {{{
 # default command, clean, and compile all
@@ -50,6 +51,6 @@ tag:
 # }}}
 # deploy commmand {{{
 deploy:
-	# not impl yet
+	# nothing here
 # }}}
 # }}}

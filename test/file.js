@@ -6,10 +6,9 @@ var fs = require('fs');
 var path = require('path');
 
 var file = process.argv[2];
-console.log(file);
-
-// start rms at 8088
-require('../lib/rms');
+if (!file) {
+  console.log('Usage: node test/file.js yorufile.js');
+}
 
 var suite = APIeasy.describe('API Test');
 
@@ -31,6 +30,5 @@ suite.next().post('/precompile', {
     function(err, res, body) {
       body = JSON.parse(body);
       assert.ok(body.success);
-      console.log(body);
     })
   .export(module);
