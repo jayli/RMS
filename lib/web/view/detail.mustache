@@ -1,9 +1,9 @@
       <div class="app-list">
         <h3>
         <ul class="breadcrumb">
-          <li><a href="/{{apptype-href}}/{{app-href}}">{{app-name}}</a> <span class="divider">/</span>
+          <li><a href="/{{apptype-href}}/{{app-id}}">{{app-name}}</a> <span class="divider">/</span>
           {{#pathes}}
-          <li><a href="/{{apptype-href}}/{{app-href}}/{{folderpath}}">{{foldername}}</a> <span class="divider">/</span></li>
+          <li><a href="/{{apptype-href}}/{{app-id}}/{{folderpath}}">{{foldername}}</a> <span class="divider">/</span></li>
           {{/pathes}}
           {{#app-filename}}<li class="active">{{app-filename}}</li>{{/app-filename}}
         </ul>
