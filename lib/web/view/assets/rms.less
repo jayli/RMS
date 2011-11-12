@@ -26,7 +26,7 @@
 body {
   font-family : "themixsemilight-plain";
   padding-top: 50px;
-  display: block !important;
+  -webkit-transition: opacity 200ms ease-in;
 }
 
 code, pre {
@@ -37,11 +37,22 @@ pre code {
   background: none;
 }
 
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+a.btn:active {
+  top: 0;
+}
+
 .btn {
   .normal;
 }
 
 .topbar {
+  box-shadow: 0 0 10px 5px #888;
+
   .nav {
     font-size: 15px;
   }
