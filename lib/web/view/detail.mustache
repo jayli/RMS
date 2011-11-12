@@ -3,11 +3,12 @@
         <ul class="breadcrumb">
           <li><a href="/{{apptype-href}}/{{app-id}}">{{app-name}}</a> <span class="divider">/</span>
           {{#pathes}}
-          <li><a href="/{{apptype-href}}/{{app-id}}/{{folderpath}}">{{foldername}}</a> <span class="divider">/</span></li>
+          <li><a href="/{{apptype-href}}/{{app-id}}/show/{{.}}/">{{.}}</a> <span class="divider">/</span></li>
           {{/pathes}}
           {{#app-filename}}<li class="active">{{app-filename}}</li>{{/app-filename}}
         </ul>
         </h3>
+        {{#svn}}
         <table class="zebra-striped">
           <thead>
             <tr>
@@ -18,16 +19,25 @@
             </tr>
           </thead>
           <tbody>
-            {{#files}}
-            <tr>
+            {{#dir}}
+            <tr class="dir">
                 <td>#</td>
-                <td><a href="/{{apptype-href}}/{{app-href}}/{{filepath}}">{{filename}}</a></td>
+                <td><a href="/{{apptype-href}}/{{app-id}}/show/{{prefix}}{{href}}">{{href}}</a></td>
                 <td>{{newest-version}}</td>
                 <td>{{last-version}}</td>
             </tr>
-            {{/files}}
+            {{/dir}}
+            {{#file}}
+            <tr>
+                <td>#</td>
+                <td><a href="/{{apptype-href}}/{{app-id}}/show/{{prefix}}{{href}}">{{href}}</a></td>
+                <td>{{newest-version}}</td>
+                <td>{{last-version}}</td>
+            </tr>
+            {{/file}}
           </tbody>
         </table>
+        {{/svn}}
       </div>
 
       <div class="app-oper">
