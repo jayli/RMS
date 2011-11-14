@@ -1,5 +1,5 @@
 <div class="app-oper">
-  <a class="btn primary" href="/{{apptype-href}}/new">添加应用</a>
+  <a class="btn primary" href="/apps/new">添加应用</a>
 </div>
 <div class="app-list">
 <ul>
@@ -7,7 +7,7 @@
   <li>
     <h4><a href="/{{apptype-href}}/{{app-name}}">{{app-name}}</a><span class="label warning">{{app-version}}</span></h4>
     <p><a href="{{app-svnroot}}" target="_blank">{{app-svnroot}}</a></p>
-    <a href="/{{apptype-href}}/{{app-name}}/delete">删除</a>
+    <a href="/{{apptype-href}}/{{app-name}}/admin/delete">删除</a>
   </li>
 {{/list}}
 </ul>
