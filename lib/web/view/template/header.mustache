@@ -11,9 +11,9 @@
       <div class="fill"> 
         <div class="container"> 
           <a class="brand" href="/">RMS<sup>dev</sup></a> 
-          <ul class="nav"> 
+          <ul class="nav {{apptype-href}}"> 
           {{#apps}}
-            <li{{#active}} class="active"{{/active}}><a href="/{{href}}">{{name}}</a></li> 
+          <li class="{{href}}"><a href="/{{href}}">{{name}}</a></li> 
           {{/apps}}
           </ul> 
           {{#username}}
