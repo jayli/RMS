@@ -18,6 +18,11 @@
           </ul> 
           {{#username}}
           <ul class="nav user"> 
+            {{#roles}}
+            <li>
+              <a href="/role/{{name}}">{{name}}</a>
+            </li>
+            {{/roles}}
             <li class="dropdown">
               <a href="/user/{{username}}" class="dropdown-toggle">{{username}}</a>
               <ul class="dropdown-menu">
