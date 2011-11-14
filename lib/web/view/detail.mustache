@@ -1,9 +1,9 @@
       <div class="app-list">
         <h3>
         <ul class="breadcrumb">
-          <li><a href="/{{apptype-href}}/{{app-id}}">{{app-name}}</a> <span class="divider">/</span>
+          <li><a href="/{{apptype-href}}/{{app-name}}">{{app-name}}</a> <span class="divider">/</span>
           {{#pathes}}
-          <li><a href="/{{apptype-href}}/{{app-id}}/show/{{href}}/">{{name}}</a> <span class="divider">/</span></li>
+          <li><a href="/{{apptype-href}}/{{app-name}}/show/{{href}}/">{{name}}</a> <span class="divider">/</span></li>
           {{/pathes}}
           <li class="active">{{app-filename}}</li>
         </ul>
@@ -26,7 +26,7 @@
               {{#dir}}
               <tr class="dir">
                   <td><span class="label success">F</span></td>
-                  <td><a href="/{{apptype-href}}/{{app-id}}/show/{{prefix}}{{href}}">{{href}}</a></td>
+                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{href}}">{{href}}</a></td>
                   <td>{{newest-version}}</td>
                   <td>{{last-version}}</td>
               </tr>
@@ -34,7 +34,7 @@
               {{#file}}
               <tr>
                   <td><span class="label">F</span></td>
-                  <td><a href="/{{apptype-href}}/{{app-id}}/show/{{prefix}}{{href}}">{{href}}</a></td>
+                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{href}}">{{href}}</a></td>
                   <td>{{newest-version}}</td>
                   <td>{{last-version}}</td>
               </tr>
