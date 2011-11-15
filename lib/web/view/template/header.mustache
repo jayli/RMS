@@ -16,7 +16,7 @@
           <li class="{{href}}"><a href="/{{href}}">{{name}}</a></li> 
           {{/apps}}
           </ul> 
-          {{#username}}
+          {{#user}}
           <ul class="nav user"> 
             {{#roles}}
             <li>
@@ -24,14 +24,14 @@
             </li>
             {{/roles}}
             <li class="dropdown">
-              <a href="/user/{{username}}" class="dropdown-toggle">{{username}}</a>
+              <a href="/user/{{name}}" class="dropdown-toggle">{{name}}</a>
               <ul class="dropdown-menu">
-                <a href="/user/{{username}}/settings">配置</a>
+                <a href="/user/{{name}}/settings">配置</a>
                 <a href="http://login.taobao.com/member/logout.jhtml?f=top">退出</a>
               </ul>
             </li>
           </ul> 
-          {{/username}}
+          {{/user}}
         </div> 
       </div> 
     </div>
