@@ -1,5 +1,11 @@
+<form action="/role/new">
+  <div class="clearfix actions">
+    <input class="span2" id="rolename" name="rolename" size="30" type="text" placeholder="用户分组">
+    <input type="submit" class="btn primary" value="添加">
+  </div>
+</form>
 <ul>
-{{#users}}
+{{#roles}}
 <li>{{name}}</li>
-{{/users}}
+{{/roles}}
 </ul>
