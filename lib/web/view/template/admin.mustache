@@ -1,6 +1,12 @@
-<h3>权限控制</h3>
+<h3>对应分组</h3>
 <ul>
-{{#users}}
-<li>{{name}}</li>
-{{/users}}
+{{#roles}}
+<li>
+  <h4><a href="/role/{{name}}">{{name}}</a></h4>
+  <p>
+    {{^active}}<a href="/{{apptype-href}}/{{app-href}}/admin/permission/add/{{id}}">授权</a>{{/active}}
+    {{#active}}<a href="/{{apptype-href}}/{{app-href}}/admin/permission/delete/{{id}}">移除授权</a>{{/active}}
+  </p>
+</li>
+{{/roles}}
 </ul>
