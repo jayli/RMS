@@ -19,12 +19,17 @@
           {{#user}}
           <ul class="nav user"> 
             {{#isroot}}
+            <li>
+              <a href="/role">权限配置</a>
+            </li>
+            {{/isroot}}
+            {{#isadmin}}
             {{#app-detail}}
             <li>
               <a href="/{{apptype-href}}/{{app-name}}/admin">应用配置</a>
             </li>
             {{/app-detail}}
-            {{/isroot}}
+            {{/isadmin}}
             <li class="dropdown">
               <a href="/user/{{name}}" class="dropdown-toggle">{{name}}</a>
               <ul class="dropdown-menu">
