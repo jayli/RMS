@@ -18,7 +18,7 @@
 </form>
 <ul>
 {{#users}}
-<li><a href="/role/edit/{{roleid}}/removeuser?userid={{id}}">{{name}}</a></li>
+<li>{{name}} <a href="/role/edit/{{roleid}}/removeuser?userid={{id}}">删除</a></li>
 {{/users}}
 </ul>
 {{#rolename}}
