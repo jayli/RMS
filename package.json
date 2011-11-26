@@ -25,7 +25,8 @@
     "socket.io": ">= 0.8.5",
     "xml2json": "",
     "mysql": "",
-    "mustache": ""
+    "mustache": "",
+    "restler": ">= 0.2.1"
   },
   "devDependencies": {
     "vows": "",

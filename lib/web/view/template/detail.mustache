@@ -1,3 +1,8 @@
+      <div class="app-oper">
+        <a class="btn primary" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=pre">预发布</a>
+        <a class="btn" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=beta">Beta发布</a>
+        <a class="btn" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=formal">正式</a>
+      </div>
       <div class="app-list">
         <h3>
         <ul class="breadcrumb">
@@ -43,10 +48,4 @@
           </table>
         {{/app-file}}
         {{/svn}}
-      </div>
-
-      <div class="app-oper">
-        <a class="btn primary" href="/pub/pre">预发布</a>
-        <a class="btn" href="/pub/beta">Beta发布</a>
-        <a class="btn" href="/pub/formal">正式</a>
       </div>
