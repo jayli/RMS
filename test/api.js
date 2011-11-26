@@ -39,7 +39,6 @@ suite.next().post('/precompile', {
   .expect(200)
   .expect('should compile less and compress css', function(err, res, body) {
     body = JSON.parse(body);
-    console.log(body.message);
     assert.ok(body.success);
     assert.equal('#id{width:30px}', body.result);
   });
@@ -75,9 +74,8 @@ suite.next().post('/precompile', {
     function(err, res, body) {
       body = JSON.parse(body);
       assert.ok(body.success);
-      assert.ok(body.success);
-      assert.equal(this.name, "frank");
       eval(body.result);
+      assert.equal(this.name, "frank");
     });
 
 suite.next().post('/precompile', {

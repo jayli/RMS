@@ -2,7 +2,7 @@
 
 var vows = require('vows');
 var assert = require('assert');
-var Worker = require('../lib/workerDispatcher');
+var Worker = require('../lib/service/workerDispatcher');
 var rmsConfig = require('../lib/rmsConfig');
 
 var suite = vows.describe('dispatcher');
