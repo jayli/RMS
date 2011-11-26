@@ -5,9 +5,6 @@ var APIeasy = require('api-easy');
 var fs = require('fs');
 var path = require('path');
 
-// start rms at 8088
-require('../lib/rms');
-
 var suite = APIeasy.describe('API Test');
 
 suite.use('localhost', 8088)
@@ -42,6 +39,7 @@ suite.next().post('/precompile', {
   .expect(200)
   .expect('should compile less and compress css', function(err, res, body) {
     body = JSON.parse(body);
+    console.log(body.message);
     assert.ok(body.success);
     assert.equal('#id{width:30px}', body.result);
   });
@@ -63,7 +61,7 @@ suite.next().post('/precompile', {
   });
 
 suite.next().post('/precompile', {
-    content: 'alert "Hello,World!"',
+    content: '@name = "frank"',
     config: JSON.stringify({
       type: 'JavaScript',
       steps: [
@@ -77,8 +75,9 @@ suite.next().post('/precompile', {
     function(err, res, body) {
       body = JSON.parse(body);
       assert.ok(body.success);
-      assert.equal(
-        '(function(){alert("Hello,World!")}).call(this);', body.result);
+      assert.ok(body.success);
+      assert.equal(this.name, "frank");
+      eval(body.result);
     });
 
 suite.next().post('/precompile', {
