@@ -7,9 +7,10 @@
 
 var forever = require('forever');
 var rmsUtil = require('./lib/rmsUtil');
+var rmsConfig = require('./lib/rmsConfig');
 
 function deploy(type) {
-  forever[rmsUtil.producing ? 'startDaemon' : 'start'](
+  forever[rmsConfig.producing ? 'startDaemon' : 'start'](
       __dirname + '/lib/' + type + '/index.js');
 }
 
