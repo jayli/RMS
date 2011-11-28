@@ -17,6 +17,5 @@ var target = process.argv[2];
 if (target) {
   deploy(target);
 } else {
-  deploy('service');
-  deploy('web');
+  console.log('Usage: node index.js {service|web}');
 }
