@@ -1,8 +1,10 @@
 <div class="alert-message block-message info" id="processbar" data-href="http://rms.taobao.com:8088/status/{{ids}}?callback=define" data-max="880">
-  <pre>{{svnpath}}</pre>
   {{#filelist}}
-  <div class="bar alert-message info" data-id="{{id}}"></div>
+  <div id="{{id}}">
+    <pre>{{path}}</pre>
+    <div class="bar alert-message info"></div>
+    <p class="message"></p>
+  </div>
   {{/filelist}}
-  <p class="message">开始发布</p>
 </div>
 {{#content}}<pre>{{content}}</pre>{{/content}}
