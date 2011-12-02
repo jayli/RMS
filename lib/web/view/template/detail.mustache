@@ -28,22 +28,14 @@
               </tr>
             </thead>
             <tbody>
-              {{#dir}}
+              {{#list}}
               <tr class="dir">
-                  <td><span class="label success">F</span></td>
-                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{href}}">{{href}}</a></td>
-                  <td>{{newest-version}}</td>
+                  <td><span class="label {{kind}}">F</span></td>
+                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}/{{name}}">{{name}}</a></td>
+                  <td>{{#commit}}{{revision}}{{/commit}}</td>
                   <td>{{last-version}}</td>
               </tr>
-              {{/dir}}
-              {{#file}}
-              <tr>
-                  <td><span class="label">F</span></td>
-                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{href}}">{{href}}</a></td>
-                  <td>{{newest-version}}</td>
-                  <td>{{last-version}}</td>
-              </tr>
-              {{/file}}
+              {{/list}}
             </tbody>
           </table>
         {{/app-file}}
