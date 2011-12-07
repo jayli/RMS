@@ -18,21 +18,19 @@
           </ul> 
           {{#user}}
           <ul class="nav user"> 
+            {{#isroot}}
+            <li{{#role}} class="active"{{/role}}>
+              <a href="/role">权限配置</a>
+            </li>
+            {{#isadmin}}
+            <li{{#admin}} class="active"{{/admin}}>
+              <a href="/{{apptype-href}}/{{app-name}}/admin">应用配置</a>
+            </li>
+            {{/isadmin}}
+            {{/isroot}}
             <li class="dropdown">
               <a href="/user/{{name}}" class="dropdown-toggle">{{name}}</a>
               <ul class="dropdown-menu">
-                {{#isroot}}
-                <li>
-                  <a href="/role">权限配置</a>
-                </li>
-                {{/isroot}}
-                {{#isadmin}}
-                {{#app-detail}}
-                <li>
-                  <a href="/{{apptype-href}}/{{app-name}}/admin">应用配置</a>
-                </li>
-                {{/app-detail}}
-                {{/isadmin}}
                 <a href="http://login.taobao.com/member/logout.jhtml?f=top">退出</a>
               </ul>
             </li>
