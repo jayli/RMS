@@ -29,9 +29,9 @@
             </thead>
             <tbody>
               {{#list}}
-              <tr class="dir">
-                  <td><span class="label {{kind}}">F</span></td>
-                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}/{{name}}">{{name}}</a></td>
+              <tr {{#dir}}class="dir"{{/dir}}>
+                  <td><input type="checkbox" name="publish" /></td>
+                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{name}}{{#dir}}/{{/dir}}">{{name}}{{#dir}}/{{/dir}}</a></td>
                   <td>{{#commit}}{{revision}}{{/commit}}</td>
                   <td>{{last-version}}</td>
               </tr>
