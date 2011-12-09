@@ -1,0 +1,26 @@
+<div id="confirm" class="modal fade hide">
+<form type="post">
+  <div class="modal-header">
+    <a href="#" class="close">&times;</a>
+    <h3>发布确认 - {{pubtype}}</h3>
+  </div>
+  <div class="modal-body">
+  {{#publist}}<input value="{{filename}}{{#dir}}/{{/dir}}" type="hidden" name="publist" />{{/publist}}
+  <ul id="publist">
+    {{#publist}}<li><strong>{{filename}}{{#dir}}/{{/dir}}</strong></li>{{/publist}}
+  </ul>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn primary">确认发布</a>
+    <select name="compressor">
+      <option value="0">不压缩</option>
+      {{#compressor}}
+      <option value="{{id}}">{{name}}</option>
+      {{/compressor}}
+    </select>
+    {{#timeout}}
+    <input type="time" name="timeout" />
+    {{/timeout}}
+  </div>
+</form>
+</div>

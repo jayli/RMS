@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family : "themixsemilight-plain";
+  /*font-family : "themixsemilight-plain";*/
   padding-top: 50px;
   -webkit-transition: opacity 200ms ease-in;
 }
@@ -100,8 +100,8 @@ a.btn:active {
 }
 
 .app-list {
-  .choose {
-    width: 50px;
+  .select {
+    width: 16px;
   }
   .version {
     width: 100px;
@@ -110,6 +110,14 @@ a.btn:active {
     color: green;
     font-weight: bold;
   }
+  label {
+    float: none;
+  }
+}
+
+#directory tr.active td {
+  background-color: #A9DBA9;
+  border-color: #46A546;
 }
 
 footer {
@@ -174,5 +182,14 @@ footer {
 
   li.done strong {
     float: right;
+  }
+}
+
+#confirm form {
+  margin: 0;
+
+  .publish {
+    max-height: 400px;
+    overflow: auto;
   }
 }
