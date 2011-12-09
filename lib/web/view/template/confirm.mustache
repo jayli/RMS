@@ -5,13 +5,16 @@
     <h3>发布确认 - {{pubtype}}</h3>
   </div>
   <div class="modal-body">
-  {{#publist}}<input value="{{filename}}{{#dir}}/{{/dir}}|{{revision}}" type="hidden" name="publist" />{{/publist}}
+  {{#publist}}<input value="{{name}}|{{revision}}" type="hidden" name="publist" />{{/publist}}
   <table id="publist">
+  <thead>
+    <tr><th>版本</th><th>路径</th></tr>
+  </thead>
   <tbody>
     {{#publist}}
       <tr>
         <td class="revision"><span class="label important">{{revision}}</span></td>
-        <td><strong>{{filename}}{{#dir}}/{{/dir}}</strong></td>
+        <td><strong>{{name}}</strong></td>
       </tr>
     {{/publist}}
   </tbody>

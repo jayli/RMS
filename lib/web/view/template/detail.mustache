@@ -1,19 +1,18 @@
-      <div class="app-oper">
-        <a class="btn primary" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=pre" data-pubtype="pre">预发布</a>
-        <a class="btn" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=beta" data-pubtype="beta">Beta发布</a>
-        <a class="btn" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=formal" data-pubtype="formal">正式</a>
-      </div>
-      <div class="app-list">
-        <h3>
-        <ul class="breadcrumb">
-          <li><a href="/{{apptype-href}}/{{app-name}}/">{{app-name}}</a> <span class="divider">/</span>
-          {{#pathes}}
-          <li><a href="/{{apptype-href}}/{{app-name}}/show/{{href}}/">{{name}}</a> <span class="divider">/</span></li>
-          {{/pathes}}
-          <li class="active">{{app-filename}}</li>
-        </ul>
-        </h3>
-        {{#file}}{{>file}}{{/file}}
-        {{#dir}}{{>dir}}{{/dir}}
-      </div>
-      <div id="modal"></div>
+<div class="app-oper" data-filename="{{filename}}" data-appname="{{app-name}}" data-revision="{{#svn}}{{rev}}{{/svn}}">
+  <a class="btn primary" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=pre" data-pubtype="pre">预发布</a>
+  <a class="btn" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=beta" data-pubtype="beta">Beta发布</a>
+  <a class="btn" href="/{{apptype-href}}/{{app-name}}/publish/{{prefix}}?type=formal" data-pubtype="formal">正式</a>
+</div>
+<div class="app-list">
+  <h3>
+  <ul class="breadcrumb">
+    <li><a href="/{{apptype-href}}/{{app-name}}/">{{app-name}}</a> <span class="divider">/</span></li>
+    {{#pathes}}
+    <li><a href="/{{apptype-href}}/{{app-name}}/show/{{href}}/">{{name}}</a> <span class="divider">/</span></li>
+    {{/pathes}}
+    <li class="active">{{app-filename}}</li>
+  </ul>
+  </h3>
+  {{#file}}{{>file}}{{/file}}
+  {{#dir}}{{>dir}}{{/dir}}
+</div>
