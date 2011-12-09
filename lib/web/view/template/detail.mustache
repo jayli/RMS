@@ -13,32 +13,9 @@
           <li class="active">{{app-filename}}</li>
         </ul>
         </h3>
+        {{#file}}{{>file}}{{/file}}
         {{#svn}}
-        {{#app-file}}
-        {{> file}}
-        {{/app-file}}
-        {{^app-file}}
-          <table class="zebra-striped" id="directory">
-            <thead>
-              <tr>
-                  <th class="select"><input type="checkbox" class="select-all"/></th>
-                  <th class="filename">文件名</th>
-                  <th class="version">最新版本号</th>
-                  <th class="version">发布版本号</th>
-              </tr>
-            </thead>
-            <tbody>
-              {{#list}}
-              <tr {{#dir}}class="dir"{{/dir}}>
-                  <td><input type="checkbox" name="publish" class="publish" data-path="{{name}}" data-dir="{{dir}}"/></td>
-                  <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{name}}{{#dir}}/{{/dir}}">{{name}}{{#dir}}/{{/dir}}</a></td>
-                  <td>{{#commit}}{{revision}}{{/commit}}</td>
-                  <td>{{last-version}}</td>
-              </tr>
-              {{/list}}
-            </tbody>
-          </table>
-        {{/app-file}}
+          {{#dir}}{{>dir}}{{/dir}}
         {{/svn}}
       </div>
       <div id="modal"></div>

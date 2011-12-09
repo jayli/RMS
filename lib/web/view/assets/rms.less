@@ -24,7 +24,6 @@
 }
 
 body {
-  /*font-family : "themixsemilight-plain";*/
   padding-top: 50px;
   -webkit-transition: opacity 200ms ease-in;
 }
@@ -55,6 +54,8 @@ a.btn:active {
 }
 
 .topbar {
+  font-family : "themixsemilight-plain";
+
   box-shadow: 0 0 10px 5px #888;
 
   .nav {
@@ -192,4 +193,25 @@ footer {
     max-height: 400px;
     overflow: auto;
   }
+
+  #publist {
+    list-style: none;
+
+    .revision {
+      width: 50px;
+    }
+
+    .delete {
+    }
+  }
+}
+
+.masthead {
+  background-color: #049cd9;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#004D9F), to(#049cd9));
+  background-image: -webkit-linear-gradient(#004D9F, #049cd9);
+  background-image: -moz-linear-gradient(#004D9F, #049cd9);
+  background-image: -o-linear-gradient(top, #004D9F, #049cd9);
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#004D9F), to(#049cd9));
 }

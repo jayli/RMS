@@ -1,17 +1,24 @@
 <div id="confirm" class="modal fade hide">
-<form type="post">
+<form type="post" action="/publish">
   <div class="modal-header">
     <a href="#" class="close">&times;</a>
     <h3>发布确认 - {{pubtype}}</h3>
   </div>
   <div class="modal-body">
-  {{#publist}}<input value="{{filename}}{{#dir}}/{{/dir}}" type="hidden" name="publist" />{{/publist}}
-  <ul id="publist">
-    {{#publist}}<li><strong>{{filename}}{{#dir}}/{{/dir}}</strong></li>{{/publist}}
-  </ul>
+  {{#publist}}<input value="{{filename}}{{#dir}}/{{/dir}}|{{revision}}" type="hidden" name="publist" />{{/publist}}
+  <table id="publist">
+  <tbody>
+    {{#publist}}
+      <tr>
+        <td class="revision"><span class="label important">{{revision}}</span></td>
+        <td><strong>{{filename}}{{#dir}}/{{/dir}}</strong></td>
+      </tr>
+    {{/publist}}
+  </tbody>
+  </table>
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn primary">确认发布</a>
+    <input type="submit" class="btn primary" value="确认发布" />
     <select name="compressor">
       <option value="0">不压缩</option>
       {{#compressor}}
