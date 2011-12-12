@@ -10,7 +10,7 @@
   <tbody>
     {{#list}}
     <tr{{#dir}} class="dir"{{/dir}}>
-      <td><input type="checkbox" name="publish" class="publish" data-path="{{name}}{{#dir}}/{{/dir}}" data-revision="{{#commit}}{{revision}}{{/commit}}"/></td>
+      <td><input type="checkbox" name="publish" class="publish" data-path="{{prefix}}{{name}}{{#dir}}/{{/dir}}" data-revision="{{#commit}}{{revision}}{{/commit}}"/></td>
       <td><a href="/{{apptype-href}}/{{app-name}}/show/{{prefix}}{{name}}{{#dir}}/{{/dir}}">{{name}}{{#dir}}/{{/dir}}</a></td>
       <td>{{#commit}}{{revision}}{{/commit}}</td>
       <td>{{last-version}}</td>
