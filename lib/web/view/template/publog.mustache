@@ -1,1 +1,28 @@
-publish log
+<table class="zebra-striped" id="log">
+  <thead>
+    <tr>
+      <th class="user">发布人</th>
+      <th class="filelist">发布文件</th>
+      <th class="status">发布状态</th>
+      <th class="type">发布类型</th>
+      <th class="user">发布详情</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#logs}}
+    <tr>
+      <td>{{#user}}{{name}}{{/user}}</td>
+      {{#service_log}}
+      {{#config}}
+      <td>
+        {{#files}}{{.}}<br/>{{/files}}
+      </td>
+      {{/config}}
+      <td>{{status}}</td>
+      {{/service_log}}
+      <td>{{#pubtype}}{{text}}{{/pubtype}}</td>
+      <td><a href="/{{apptype-href}}/{{app-name}}/publish/{{oper_id}}">详情</a></td>
+    </tr>
+    {{/logs}}
+  </tbody>
+</table>

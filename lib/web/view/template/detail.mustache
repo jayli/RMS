@@ -1,11 +1,16 @@
 <form method="post" action="/{{apptype-href}}/{{app-name}}/confirm/">
 <div class="app-oper pubbtns" data-filename="{{prefix}}" data-appname="{{app-name}}" data-apptype="{{apptype-href}}" data-revision="{{#svn}}{{rev}}{{/svn}}">
-  <select id="pubtype" name="type">
-    <option value="pre">预发布</option>
-    <option value="beta">Beta发布</option>
-    <option value="formal">正式发布</option>
-  </select>
-  <input class="btn primary" type="submit" value="发布" />
+  <div id="viewlog">
+    <a href="/{{apptype-href}}/{{app-name}}/publog/" class="btn info">查看日志</a>
+  </div>
+  <div id="pubbtns">
+    <select id="pubtype" name="type">
+    {{#pubtypes}}
+      <option value="{{key}}">{{text}}</option>
+    {{/pubtypes}}
+    </select>
+    <input class="btn primary" type="submit" value="发布" />
+  </div>
 </div>
 <div class="app-list">
   <h3>

@@ -1,15 +1,26 @@
 {{#message}}<div class="bar alert-message warn">{{message}}</div>{{/message}}
-{{#ids}}
-<div class="alert-message block-message info" id="processbar" data-href="http://rms.taobao.com:8088/status/{{operId}}?callback=define" data-max="880">
+<div class="alert-message block-message info" id="processbar" data-href="http://rms.taobao.com:9909/status/{{operId}}?callback=define" data-max="880">
+  <h3>{{#pubtype}}{{text}}{{/pubtype}}</h3>
+  <p>{{#time}}<span class="label success">{{start}}</span> → <span class="label success">{{end}}{{/time}}]</span></p>
   <div id="status">
-    <ul>
-      {{#filelist}}
-      <li>{{path}}</li>
-      {{/filelist}}
-    </ul>
     <div class="bar alert-message info"></div>
     <p class="message"></p>
   </div>
 </div>
-{{/ids}}
+<table>
+  <thead>
+    <tr>
+      <th width=80>发布版本</th>
+      <th>发布文件</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#filelist}}
+    <tr>
+      <td>{{rev}}</td>
+      <td>{{path}}</td>
+    </tr>
+    {{/filelist}}
+  </tbody>
+</table>
 {{#content}}<pre>{{content}}</pre>{{/content}}
