@@ -1,0 +1,11 @@
+{{#pagination}}
+<div class="pagination">
+  <ul>
+    <li class="prev {{#disablePrev}}disabled{{/disablePrev}}"><a href="{{#disablePrev}}javascript:void(0){{/disablePrev}}{{^disablePrev}}/{{apptype-href}}/{{app-name}}/publog/?page={{prevPage}}{{/disablePrev}}">&larr; Previous</a></li>
+    {{#pages}}
+      <li{{#active}} class="active"{{/active}}><a href="{{#active}}javascript:void(0){{/active}}{{^active}}/{{apptype-href}}/{{app-name}}/publog/?page={{count}}{{/active}}">{{count}}</a></li>
+    {{/pages}}
+    <li class="next {{#disableNext}}disabled{{/disableNext}}"><a href="{{#disableNext}}javascript:void(0){{/disableNext}}{{^disableNext}}/{{apptype-href}}/{{app-name}}/publog/?page={{nextPage}}{{/disableNext}}">Next &rarr;</a></li>
+  </ul>
+</div>
+{{/pagination}}

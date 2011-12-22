@@ -14,9 +14,7 @@
       <td>{{#user}}{{name}}{{/user}}</td>
       {{#service_log}}
       {{#config}}
-      <td>
-        {{#files}}{{.}}<br/>{{/files}}
-      </td>
+      <td>{{#files}}{{.}}<br/>{{/files}}</td>
       {{/config}}
       <td>{{status}}</td>
       {{/service_log}}
@@ -26,3 +24,4 @@
     {{/logs}}
   </tbody>
 </table>
+{{>pagination}}
