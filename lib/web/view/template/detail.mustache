@@ -1,9 +1,9 @@
 <form method="post" action="/{{apptype-href}}/{{app-name}}/confirm/">
-<div class="app-oper pubbtns" data-filename="{{prefix}}" data-appname="{{app-name}}" data-apptype="{{apptype-href}}" data-revision="{{#svn}}{{rev}}{{/svn}}">
+<div class="app-oper pubbtns">
   <div id="viewlog">
     <a href="/{{apptype-href}}/{{app-name}}/publog/" class="btn info">查看日志</a>
   </div>
-  <div id="pubbtns">
+  <div id="pubbtns" data-filename="{{prefix}}" data-appname="{{app-name}}" data-apptype="{{apptype-href}}" data-revision="{{#svn}}{{rev}}{{/svn}}">
     <select id="pubtype" name="type">
     {{#pubtypes}}
       <option value="{{key}}">{{text}}</option>
