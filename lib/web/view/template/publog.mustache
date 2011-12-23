@@ -4,8 +4,9 @@
       <th class="user">发布人</th>
       <th class="filelist">发布文件</th>
       <th class="status">发布状态</th>
+      <th class="user">压缩工具</th>
       <th class="type">发布类型</th>
-      <th class="user">发布详情</th>
+      <th class="time">发布时间</th>
     </tr>
   </thead>
   <tbody>
@@ -17,13 +18,13 @@
       <td>{{#files}}{{.}}<br/>{{/files}}</td>
       {{/config}}
       <td>{{status}}</td>
+      <td>{{compressor}}</td>
       {{/service_log}}
-      <td>{{#pubtype}}{{text}}{{/pubtype}}</td>
-      <td><a href="/{{apptype-href}}/{{app-name}}/publish/{{oper_id}}">详情</a></td>
+      {{#pubtype}}<td>{{text}}</td>{{/pubtype}}
+      {{^success}}<td colspan=4><span class="label important">发布失败</span></td>{{/success}}
+      <td>{{pubtime}}</td>
     </tr>
     {{/logs}}
   </tbody>
 </table>
-{{#pagination}}
-{{>pagination}}
-{{/pagination}}
+{{#pagination}}{{>pagination}}{{/pagination}}

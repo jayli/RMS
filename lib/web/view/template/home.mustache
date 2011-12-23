@@ -1,1 +1,45 @@
-<h2><em>欢迎来到RMS首页</em></h2>
+{{>header}}
+<div class="app-title page-header">
+  <h2>欢迎试用新版RMS，任何建议请提给文河或者玉伯</h2>
+</div>
+<div id="myapps">
+<ul>
+  {{#applist}}
+  <li><a href="/{{type}}/{{name}}">{{name}}</a></li>
+  {{/applist}}
+</ul>
+</div>
+<div class="app-title page-header">
+  <h2>最近发布</h2>
+  <table>
+  <thead>
+    <tr>
+      <th>发布时间</th>
+      <th>发布文件</th>
+      <th>压缩</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#logs}}
+    <tr>
+      <td>{{pubtime}}</td>
+      {{#service_log}}
+        <td>{{compressor}}</td>
+        <td>
+        {{#config}}
+          {{#files}}
+            {{.}}<br/>
+          {{/files}}
+        {{/config}}
+        </td>
+      {{/service_log}}
+      {{^success}}
+      <td colspan=2>发布失败</td>
+      {{/success}}
+    </tr>
+  {{/logs}}
+  </tbody>
+  </table>
+</div>
+<div id="recent"></div>
+{{>footer}}
