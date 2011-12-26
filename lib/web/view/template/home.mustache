@@ -14,17 +14,17 @@
   <table>
   <thead>
     <tr>
-      <th>发布时间</th>
+      <th>应用</th>
       <th>发布文件</th>
       <th>压缩</th>
+      <th>发布时间</th>
     </tr>
   </thead>
   <tbody>
   {{#logs}}
     <tr>
-      <td>{{pubtime}}</td>
+      <td>{{#app}}{{name}}{{/app}}</td>
       {{#service_log}}
-        <td>{{compressor}}</td>
         <td>
         {{#config}}
           {{#files}}
@@ -32,10 +32,12 @@
           {{/files}}
         {{/config}}
         </td>
+        <td>{{compressor}}</td>
       {{/service_log}}
       {{^success}}
       <td colspan=2>发布失败</td>
       {{/success}}
+      <td>{{pubtime}}</td>
     </tr>
   {{/logs}}
   </tbody>
