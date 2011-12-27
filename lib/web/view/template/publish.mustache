@@ -4,7 +4,7 @@
   </div>
 </div>
 {{#message}}<div class="bar alert-message warn">{{message}}</div>{{/message}}
-<div class="alert-message block-message info" id="processbar" data-href="http://rms.taobao.com:9909/status/{{operId}}?callback=define" data-max="880">
+<div class="alert-message block-message info" id="processbar" data-href="http://feops.taobao.com:9909/status/{{operId}}?callback=define" data-max="880">
   <h3>{{#pubtype}}{{text}}{{/pubtype}}</h3>
   <p>{{#time}}<span class="label success" id="start">{{start}}</span> → <span class="label success" id="end">{{end}}{{/time}}</span></p>
   <div id="status">
