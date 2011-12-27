@@ -19,15 +19,13 @@
     "underscore": ">= 1.1.7",
     "nativeUtil": ">= 0.0.1",
     "node-uuid": ">= 1.2.0",
-    "webservice": ">= 0.5.1",
-    "webworker": ">= 0.8.4",
     "express": ">= 2.5.0",
-    "socket.io": ">= 0.8.5",
     "xml2json": "",
     "mysql": "",
     "mustache": "",
     "forever": "",
-    "restler": ">= 0.2.1"
+    "restler": ">= 0.2.1",
+    "async": ""
   },
   "devDependencies": {
     "vows": "",
