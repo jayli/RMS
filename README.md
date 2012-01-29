@@ -1,4 +1,4 @@
-Resource Management System
+Rsource Management System
 ==========================
 
 Start `RMS` services:
@@ -14,3 +14,5 @@ To run local tests, typing this:
     npm test
 
 feel free to contact @yyfrankyy or @lifesinger for any suggestions.
+
+jayli 
