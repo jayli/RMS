@@ -13,6 +13,5 @@ To run local tests, typing this:
 
     npm test
 
-feel free to contact @yyfrankyy or @lifesinger for any suggestions.
+feel free to contact @yyfrankyy or @lifesinger or @jayli for any suggestions.
 
-jayli 
